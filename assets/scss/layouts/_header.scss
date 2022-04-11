@@ -1,0 +1,147 @@
+/* Header */
+
+.header {
+  padding: 0.64rem;
+  text-align: center;
+  
+  .__content {
+    display: inline-block;
+  }
+
+  .__nav {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+
+    ul {
+      overflow: hidden;
+      text-align: center;
+      display: block;
+      
+      li {
+        display: inline-block;
+        margin: .25rem .4rem;
+      }
+      
+      a {
+        display: inline-block;
+        padding: .1rem .3rem 0;
+        border-radius: 2px;
+        border-bottom: .36rem solid $silver-l8;
+        line-height: 1.25;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $silver-d4;
+        margin-bottom: .1rem;
+        
+        &:hover {
+          color: $black;
+          border-bottom-color: $silver-l6;
+          border-style: dashed;
+          border-width: 0 0 .36rem 0;
+        }
+      }
+    }
+  
+  }
+
+  .__logo {
+    display: block;
+    margin: 0;
+    float: none;
+    
+    img {
+      display: block;
+      width: 18rem;
+      height: auto;
+      margin: 1rem auto;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .header .__logo img {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .header .__nav ul {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+@media (min-width: 760px) {
+  .header {
+    width: 90%;
+    margin: 1rem auto;
+    
+    .__division {
+      width: calc(100% - 1rem);
+      padding: 0 .5rem;
+    }
+    
+    .__logo img {
+      width: 21rem;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .header .__logo img {
+    width: 23rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header .__logo a {
+    display: inline !important;
+    overflow: hidden !important;
+    float: right !important;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .header {
+    margin-bottom: 1rem !important;
+    
+    .__nav ul {
+      overflow: hidden;
+      text-align: center;
+      display: block;
+    }
+
+    .__logo a {
+      overflow: hidden;
+      float: right !important;
+      
+      img {
+        float: right !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .header {
+    .__logo {
+      margin-right: 0;
+      padding-right: 0;
+      
+      img {
+        width: 23rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    .__logo img {
+      width: 24rem;
+    }
+  }
+}
