@@ -1,0 +1,113 @@
+//? BUTTON COMPONENT
+
+.button {
+  display: inline-block;
+  padding: .5rem 1.25rem;
+  border: 0 !important;
+  border-radius: 3rem;
+  line-height: 130%;
+  font-size: 1.36rem;
+  font-weight: 700;
+  background-color: $silver-l5;
+  color: $silver-d5 !important;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:hover, 
+  &:focus {
+    background-color: $silver-l4;
+    color: $silver-d6 !important;
+  }
+
+  //? Primary Button
+  &.--primary {
+    background-color: $primary !important;
+    color: #fff !important;
+    
+    &:hover, 
+    &:focus {
+      background-color: darken($primary, 5%) !important;
+    }
+  }
+
+  //? Secondary Button
+  &.--secondary {
+    background-color: $primary-l5 !important;
+    color: $primary-d3 !important;
+    &:hover,
+    &:focus {
+      background-color: $primary-l4 !important;
+      color: $primary-d4 !important;
+    }
+  }
+
+  //? Text-only Button
+  &.--textonly {
+    background-color: unset;
+    color: $silver-d4 !important;
+    
+    &:hover,
+    &:focus {
+      color: $silver-d6 !important;
+    }
+  }
+
+  //? Outlined Button
+  &.--outlined {
+    background-color: unset;
+    padding: .3rem 1.4rem;
+    border: .2rem solid $primary !important;
+    color: $silver-d6 !important;
+    
+    &:hover,
+    &:focus {
+      color: $black;
+      background-color: $primary-l3 !important;
+    }
+  }
+}
+
+//? Button Container 
+.button-container {
+  padding: .5rem;
+
+  .button {
+    margin: .5rem;
+  }
+}
+
+
+//? Read Next
+.read-next {
+  display: inline-block;
+  margin: .5rem 0;
+  margin-right: .5rem;
+  padding: .7rem 1.5rem .5rem 1rem;
+  border-radius: .6rem;
+  border: .2rem solid $silver-l7;
+  min-width: 12.5rem;
+  text-align: left;
+  color: $silver-l4 !important;
+
+  &:hover,
+  &:focus {
+    border-color: $silver-l5 !important;
+    text-decoration: underline;
+  }
+
+  .__title {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin: .25rem 0;
+    font-weight: 700;
+    color: $silver-d4 !important;
+  }
+
+  .__continue {
+    display: block;
+    color: $silver-l1 !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
