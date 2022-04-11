@@ -1,19 +1,24 @@
 // Fonts
-$sansSerif  : 'Open Sans';
+$sansSerif  : '-apple-system, BlinkMacSystemFont, "Rubik", "Roboto", "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", "Helvetica", "Ubuntu", "Noto", arial, sans-serif';
 
 // Font Sizing
 $baseFontSize      : 16px;
-$baseLineHeight    : 1.5;
-$headingLineHeight : 1.2;
+$baseLineHeight    : 1;
+$headingLineHeight : 1.25;
 
 // Colors
-$black : rgba(51,51,51,1);
-$red   : #d52b1e;
-$blue  : #00a1de;
-
-// Spacing
-$pad : 1em;
+$black : #20202F;
 
 // Breakpoints
-$smallBreakpoint : 600px;
-$largeBreakpoint : 1080px;
+$breakpointS1 : 320px;
+$breakpointS2 : 360px;
+$breakpointS3 : 400px;
+$breakpointS4 : 460px;
+$breakpointS5 : 500px;
+$breakpointS6 : 600px;
+$breakpointM  : 760px;
+$breakpointL1 : 1000px;
+$breakpointL2 : 1200px;
+$breakpointL3 : 1400px;
+$breakpointL4 : 1600px;
+$breakpointL5 : 1800px;
