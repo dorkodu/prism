@@ -1,35 +1,29 @@
 html {
-  font-family: $sansSerif, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: normal;
   color: $black;
-  line-height: $baseLineHeight;
-  font-size: 14px;
-  
-  @media only screen and (min-width: $smallBreakpoint) {
-    font-size: 15px;
-  }
-  
-  @media only screen and (min-width: $largeBreakpoint) {
-    font-size: $baseFontSize;
-  }  
+  font-size: 1rem;
+  text-transform: lowercase;
 }
 
 // Header Styles
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin: 0;
-  margin-bottom: $pad;
+  margin-bottom: 1rem;
   line-height: $headingLineHeight;
 
   a {
     font-weight: inherit;
   }
 }
+
 p {
-  margin-bottom: $pad;
+  margin-bottom: 1rem;
 }
 
 // Text Styles
 em { font-style: italic; }
 strong { font-weight: bold; }
-.uppercase { text-transform: uppercase; }  
+.--uppercase { text-transform: uppercase; }
+.--lowercase { text-transform: lowercase; }
