@@ -4,6 +4,10 @@
 
 prism is dorkodu's artwork styleguide.
 
-here we publish our brand stuff, product philosophy and design inspirations, a collection of web components created in dorkodu-style, and more... 
+here we publish...
+- our brand assets
+- product philosophy
+- design inspirations
+- a collection of web components created in dorkodu-style
 
-artfully composed into a website template :)
+and more... artfully composed into a website template :)
