@@ -2,7 +2,7 @@
   "name": "prism",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
@@ -11,6 +11,10 @@
   "keywords": [],
   "author": "Dorkodu",
   "license": "MIT",
+  "dependencies": {
+    "@dorkodu/soda": "^1.0.6",
+    "@dorkodu/superpage.js": "^0.0.1"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
@@ -28,9 +32,5 @@
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.2"
-  },
-  "dependencies": {
-    "@dorkodu/soda": "^1.0.6",
-    "@dorkodu/superpage.js": "^0.0.1"
   }
 }

@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./index.js",
+  entry: "./index.jsx",
   output: {
     filename: "index.js",
     path: __dirname + "/public"
@@ -17,7 +17,7 @@ module.exports = {
     port: 8080
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js', '.json', '.jsx']
   },
   module: {
     rules: [
