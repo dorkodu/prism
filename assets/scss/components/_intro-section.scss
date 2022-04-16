@@ -1,0 +1,159 @@
+//? COMPONENT: Intro Section
+
+.intro-section {
+  max-width: 60rem;
+  margin: 0 auto 2rem;
+  padding: 0 .5rem;
+  text-align: left !important;
+
+  .__title {
+    margin: .5rem auto;
+    font-size: 1.85rem;
+    font-weight: 800;
+    text-align: center;
+    color: $silver-l4;
+  }
+
+  .__tagline {
+    margin: 0 auto;
+    font-size: 1.95rem;
+    line-height: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: $silver-d5;
+  }
+
+  .__statement {
+    color: $silver-l1;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    line-height: 125%;
+    text-align: center;
+  }
+
+  .__cta {
+    margin: .75rem 0;
+    text-align: center !important;
+    text-align: center !important; 
+    margin: 0 0 1rem; 
+    padding-top: 0;
+  }
+
+  .__contents {
+    padding: 0 1rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    padding-left: .75rem !important;
+    padding-right: .25rem !important;
+
+    .button {
+      margin: .25rem auto;
+      margin-left: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  .picture {
+    max-width: 25rem !important;
+    margin: 0 auto !important;
+    float: none !important;
+  }
+
+  p {
+    margin-bottom: .5rem;
+  }
+
+  //? Type: Middle Note
+  &.--meddle {
+
+    .__contents {
+      display: block;
+      width: 100% !important;
+      max-width: 42rem !important;
+      margin: 0 auto;
+      padding: 0;
+      float: none;
+      text-align: left !important;
+    }
+
+    &.--wide > .__contents {
+      width: 100%;
+    }
+
+    .__title,
+    .__tagline,
+    .__cta,
+    .__statement {
+      text-align: left !important;
+    }
+
+    .__cta > .button {
+      float: none;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .intro-section {
+    &.--meddle {
+      .__contents {
+        text-align: center !important;
+      }
+
+      .__title, 
+      .__tagline,
+      .__cta,
+      .__statement {
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro-section {
+    .__contents {
+      float: right;
+      width: 55% !important;
+      padding-right: 2rem;
+
+      .__title,
+      .__statement,
+      .__tagline {
+        text-align: left;
+      }
+
+      .button {
+        float: left;
+      }
+    }
+
+    .picture {
+      width: 45% !important;
+      float: left !important;
+      margin-top: 0;
+      padding-top: 0;
+      padding-left: 2rem;
+      max-width: 24rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-section {
+    .picture {
+      max-width: 26rem !important;
+      width: 45% !important;
+      margin-top: 0;
+      padding-top: 0;
+      padding-left: 2rem;
+    }
+
+    .__contents {
+      float: right;
+      width: 55% !important;
+      padding-right: 2rem;
+    }
+  }
+}
