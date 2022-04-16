@@ -1,28 +1,15 @@
 //? COLORS
 
-$textColor: #1f252e;
+$green    : #30DB36; // dorkodian green (dorkodu's brand color)
+$silver   : #627384; // silver (dorkodu-style gray)
+$blue     : #269DD9; // carolina blue (in peace with dorkodian green)
+$red      : #e54634; // cinnabar (slightly pinkish, pastel red)
+$yellow   : #F2AD0D; // honey/golden
+$purple   : #460DF2; // ultramarine
 
-//? dorkodu's brand color (dorkodian green)
-$green: #30DB36;
+//? DIFFERENT COLOR TONES
 
-//? silver: dorkodu-style gray
-$silver: #657480;
-$silver-l1: lighten($silver, 10%);
-$silver-l2: lighten($silver, 20%);
-$silver-l3: lighten($silver, 25%);
-$silver-l4: lighten($silver, 30%);
-$silver-l5: lighten($silver, 35%);
-$silver-l6: lighten($silver, 40%);
-$silver-l7: lighten($silver, 45%);
-$silver-l8: lighten($silver, 50%);
-$silver-d1: darken($silver, 10%);
-$silver-d2: darken($silver, 15%);
-$silver-d3: darken($silver, 20%);
-$silver-d4: darken($silver, 25%);
-$silver-d5: darken($silver, 30%);
-$silver-d6: darken($silver, 40%);
-
-//? primary theme color
+//* primary theme color
 $primary: $green;
 $primary-l1: lighten($primary, 10%);
 $primary-l2: lighten($primary, 20%);
@@ -39,8 +26,23 @@ $primary-d4: darken($primary, 25%);
 $primary-d5: darken($primary, 30%);
 $primary-d6: darken($primary, 40%);
 
-//? carolina blue (in peace with dorkodian green)
-$blue: #269DD9;
+//* silver
+$silver-l1: lighten($silver, 10%);
+$silver-l2: lighten($silver, 20%);
+$silver-l3: lighten($silver, 25%);
+$silver-l4: lighten($silver, 30%);
+$silver-l5: lighten($silver, 35%);
+$silver-l6: lighten($silver, 40%);
+$silver-l7: lighten($silver, 45%);
+$silver-l8: lighten($silver, 50%);
+$silver-d1: darken($silver, 10%);
+$silver-d2: darken($silver, 15%);
+$silver-d3: darken($silver, 20%);
+$silver-d4: darken($silver, 25%);
+$silver-d5: darken($silver, 30%);
+$silver-d6: darken($silver, 40%);
+
+//* blue
 $blue-l1: lighten($blue, 10%);
 $blue-l2: lighten($blue, 20%);
 $blue-l3: lighten($blue, 25%);
@@ -56,8 +58,7 @@ $blue-d4: darken($blue, 25%);
 $blue-d5: darken($blue, 30%);
 $blue-d6: darken($blue, 40%);
 
-//? cinnabar (slightly pinkish, pastel red)
-$red: #e54634;
+//* red
 $red-l1: lighten($red, 10%);
 $red-l2: lighten($red, 20%);
 $red-l3: lighten($red, 25%);
@@ -73,8 +74,7 @@ $red-d4: darken($red, 25%);
 $red-d5: darken($red, 30%);
 $red-d6: darken($red, 40%);
 
-//? honey/golden
-$yellow: #F2AD0D;
+//* yellow
 $yellow-l1: lighten($yellow, 10%);
 $yellow-l2: lighten($yellow, 20%);
 $yellow-l3: lighten($yellow, 25%);
@@ -90,8 +90,7 @@ $yellow-d4: darken($yellow, 25%);
 $yellow-d5: darken($yellow, 30%);
 $yellow-d6: darken($yellow, 40%);
 
-//? ultramarine
-$purple:    #460DF2;
+//* purple
 $purple-l1: lighten($purple, 10%);
 $purple-l2: lighten($purple, 20%);
 $purple-l3: lighten($purple, 25%);
