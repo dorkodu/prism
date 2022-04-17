@@ -3,7 +3,7 @@
   width: 4rem;
   height: 4rem;
   margin: 0 auto;
-  stroke: var(--silver-l1);
+  stroke: $silver-l3;
 }
 
 .picture.--undraw>img {
@@ -11,7 +11,7 @@
 }
 
 .--lightgray {
-  color: var(--silver);
+  color: var(--silver-l1);
 }
 
 .header .logo {
@@ -28,8 +28,6 @@
   max-width: 36rem;
   margin: 0 auto;
 }
-
-@media (max-width: 200px) {}
 
 @media (min-width: 1000px) {
   .feature-showcase .column.--main .descriptive-list {
