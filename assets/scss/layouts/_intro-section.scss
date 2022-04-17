@@ -65,7 +65,7 @@
   }
 
   //? Type: Middle Note
-  &.--meddle {
+  &.--middle {
 
     .__contents {
       display: block;
@@ -96,7 +96,7 @@
 
 @media (min-width: 500px) {
   .intro-section {
-    &.--meddle {
+    &.--middle {
       .__contents {
         text-align: center !important;
       }
