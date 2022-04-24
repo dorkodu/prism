@@ -10,6 +10,7 @@
   max-width: 32rem;
   background-color: unset;
   padding: 0;
+  overflow: hidden !important;
 
   >h1,
   >h2,
@@ -52,7 +53,7 @@
 
   .owner {
     font-weight: 800;
-    font-size: 1.25rem !important;
+    font-size: 1.15rem !important;
     color: $silver-d1;
   }
 }

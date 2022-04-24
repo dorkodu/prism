@@ -1,4 +1,4 @@
-@import "variables/__index.scss";
-@import "mixins/__index.scss";
+@import "mixins/__index";
+@import "variables";
 @import "grid";
-@import "visibility"; // Visibility last for precedence
+@import "visibility";
