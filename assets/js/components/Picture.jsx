@@ -1,13 +1,12 @@
 import { Soda } from "@dorkodu/soda";
 
-export function Picture({ source, alt, title }) {
-  if (!alt) alt = "";
+export function Picture({ source, title }) {
   if (!title) title = "";
   
   return (
     <div class="picture">
-      <img src={source} alt={alt} title={title}/>
-      {alt !== "" ? <p>{alt}</p> : ""}
+      <img src={source} alt={title} title={title}/>
+      {title !== "" ? <p>{title}</p> : ""}
     </div>
   )
 }
