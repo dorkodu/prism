@@ -20,7 +20,7 @@ export function IntroSection({title, tagline, statement, picture, links, middle,
       </p>
       {cta}
     </div>
-    {picture}
+    {picture ?? ""}
   </div>
   )
 }

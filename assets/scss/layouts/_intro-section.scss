@@ -48,7 +48,7 @@
     padding-right: .25rem !important;
 
     .button {
-      margin: .25rem auto;
+      margin: 0 auto;
       margin-left: 0;
       margin-right: 1rem;
     }
@@ -70,7 +70,7 @@
     .__contents {
       display: block;
       width: 100% !important;
-      max-width: 42rem !important;
+      max-width: 40rem !important;
       margin: 0 auto;
       padding: 0;
       float: none;
@@ -86,6 +86,10 @@
     .__cta,
     .__statement {
       text-align: left !important;
+    }
+
+    .__statement {
+      margin: 0;
     }
 
     .__cta > .button {
