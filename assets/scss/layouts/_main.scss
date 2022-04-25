@@ -27,7 +27,7 @@
 
   p {
     padding: 1rem .5rem;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     line-height: 130%;
     text-align: left;
 
@@ -45,7 +45,7 @@
 
 
 @media (min-width: 1000px) {
-  main > p {
+  .main > p {
     padding: .5rem;
   }
 }

@@ -2,21 +2,23 @@
 
 .button {
   display: inline-block;
-  padding: .5rem 1.25rem;
+  padding: .5rem 1.35rem;
   border: 0 !important;
   border-radius: 1.25rem;
   line-height: 130%;
   font-size: 1.36rem;
   font-weight: 700;
-  background-color: $silver-l5;
-  color: $silver-d1 !important;
+  background-color: $silver-l8;
+  color: $silver;
   cursor: pointer;
   text-decoration: none !important;
+  
+  transition: .2s;
 
-  &:hover, 
+  &:hover,
   &:focus {
-    background-color: $silver-l4;
-    color: $silver-d3 !important;
+    background-color: $silver-l7;
+    color: $silver-d1 !important;
   }
 
   //? Primary Button
@@ -37,18 +39,7 @@
     &:hover,
     &:focus {
       background-color: $primary-l4 !important;
-      color: $primary-d4 !important;
-    }
-  }
-
-  //? Text-only Button
-  &.--textonly {
-    background-color: unset;
-    color: $silver-d4 !important;
-    
-    &:hover,
-    &:focus {
-      color: $silver-d6 !important;
+      color: $primary-d3 !important;
     }
   }
 
@@ -56,23 +47,40 @@
   &.--outlined {
     background-color: unset;
     padding: .3rem 1.4rem;
-    border: .2rem solid $primary !important;
-    color: $silver-d6 !important;
+    border: .2rem solid $primary-l4 !important;
+    color: $primary-d2;
     
     &:hover,
     &:focus {
-      color: $color_Text;
-      background-color: $primary-l3 !important;
+      color: $primary-d3 !important;
+      border-color: $primary-l2 !important;
+      background-color: $primary-l6 !important;
     }
   }
+
+  //? Text-only Button
+  &.--text {
+    background-color: unset;
+    color: $primary-d2 !important;
+    
+    &:hover,
+    &:focus {
+      color: $primary-d3 !important;
+      background-color: $primary-l6 !important;
+    }
+  }
+
+
 }
 
 //? Button Container 
 .button-container {
   padding: .5rem 0;
+  text-align: center !important;
 
   .button {
-    margin: .5rem;
+    margin: .25rem 0 !important;
+    margin-right: .5rem !important;
   }
 }
 
@@ -83,7 +91,7 @@
   margin: .5rem 0;
   margin-right: .5rem;
   padding: .7rem 1.5rem .5rem 1rem;
-  border-radius: .6rem;
+  border-radius: .7rem;
   border: .2rem solid $silver-l7;
   min-width: 12.5rem;
   text-align: left;
