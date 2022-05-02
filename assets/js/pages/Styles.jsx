@@ -18,18 +18,19 @@ import IntroPhoto from "../../../images/unsplash/jean-louis-paulin-Rr1CIeo9cPo-u
 export function Styles() {
   return (
     <div>
-      <Header />
       <IntroSection
         title="prism: styles"
         tagline=""
         statement=""
         picture={<Picture source={IntroPhoto} title="" />}
-        links={actionLinks}
-        />
-      <main class="main">
-      </main>
-
-      <Footer/>
+        links={[
+          <LinkButton type="primary" label="our philosophy" link="#philosophy" />,
+          <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
+        ]}
+      />
+      <article>
+        <p>styles will come here.</p>
+      </article>
     </div>
   );
 }

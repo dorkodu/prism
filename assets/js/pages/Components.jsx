@@ -1,8 +1,6 @@
 import { Soda } from "@dorkodu/soda";
 
 //* layouts
-import { Header } from "../layouts/Header";
-import { Footer } from "../layouts/Footer";
 import { IntroSection } from "../layouts/IntroSection";
 
 //* components
@@ -17,21 +15,18 @@ import IntroPhoto from "../../../images/unsplash/jean-louis-paulin-Rr1CIeo9cPo-u
 
 //? pages are not meant to be reusable, so keep it as static as how you wish :)
 
-let actionLinks = [
-  <LinkButton type="primary" label="our philosophy" link="#philosophy" />,
-  <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
-];
-
 export function Components() {
   return (
     <div>
-      <Header />
       <IntroSection
         title="prism components"
         tagline="common components"
         statement="we believe in this as a part of our mission, use technology to create wonderful, artistically subtle and liberating experiences for everyone."
         picture={<Picture source={IntroPhoto} title="" />}
-        links={actionLinks}
+        links={[
+          <LinkButton type="primary" label="our philosophy" link="#philosophy" />,
+          <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
+        ]}
         />
       <main class="main">
         <article>
@@ -52,8 +47,6 @@ export function Components() {
           
         </article>
       </main>
-
-      <Footer/>
     </div>
   );
 }

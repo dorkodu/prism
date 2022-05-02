@@ -28,17 +28,17 @@
     
     &:hover, 
     &:focus {
-      background-color: darken($primary, 5%) !important;
+      background-color: darken($primary, 7%) !important;
     }
   }
 
   //? Secondary Button
   &.--secondary {
     background-color: $primary-l5 !important;
-    color: $primary-d3 !important;
+    color: $primary-d2 !important;
     &:hover,
     &:focus {
-      background-color: $primary-l4 !important;
+      background-color: $primary-l3 !important;
       color: $primary-d3 !important;
     }
   }
@@ -48,35 +48,37 @@
     background-color: unset;
     padding: .3rem 1.4rem;
     border: .2rem solid $primary-l4 !important;
-    color: $primary-d2;
+    color: $primary-d1;
     
     &:hover,
     &:focus {
-      color: $primary-d3 !important;
-      border-color: $primary-l2 !important;
-      background-color: $primary-l6 !important;
+      color: $primary-d2 !important;
+      border-color: $primary-l1 !important;
+      background-color: $primary-l5 !important;
     }
   }
 
   //? Text-only Button
   &.--text {
     background-color: unset;
-    color: $primary-d2 !important;
+    color: $primary-d1 !important;
     
     &:hover,
     &:focus {
-      color: $primary-d3 !important;
+      color: $primary-d2 !important;
       background-color: $primary-l6 !important;
     }
   }
-
-
 }
 
 //? Button Container 
 .button-container {
   padding: .5rem 0;
-  text-align: center !important;
+  text-align: left;
+
+  &.--center {
+    text-align: center !important;
+  }
 
   .button {
     margin: .25rem 0 !important;

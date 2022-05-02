@@ -6,7 +6,7 @@ import { Image } from "../components/Image";
 //* images
 import PrismLogo from "../../../images/prism.svg";
 
-export function Header({image, links}) {
+export function Header() {
   return (
     <header class="header">
       <div class="__content">
@@ -15,11 +15,10 @@ export function Header({image, links}) {
         </div>
         <nav class="__nav">
           <ul>
-            <li><a href="#foreword" rel="dofollow">foreword</a></li>
-            <li><a href="#philosophy" rel="dofollow">philosophy</a></li>
-            <li><a href="#inspriation" rel="dofollow">inspiration</a></li>
-            <li><a href="https://github.com/dorkodu/prism">github</a></li>
-            <li><a href="https://dorkodu.com/folks" rel="dofollow">join the folks!</a></li>
+            <li><a href="/" rel="dofollow">foreword</a></li>
+            <li><a href="#foundations" rel="dofollow">foundations</a></li>
+            <li><a href="#styles" rel="dofollow">styles</a></li>
+            <li><a href="#components" rel="dofollow">components</a></li>
           </ul>
         </nav>
       </div>

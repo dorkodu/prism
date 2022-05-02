@@ -12,22 +12,24 @@ export function Footer() {
       <div class="__nav">
       
         <div class="__column">
-          <h4>company</h4>
+          <h4>prism</h4>
           <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="/manifesto">manifesto</a></li>
-            <li><a href="/jobs">jobs</a></li>
-            <li><a href="/investors">be an investor!</a></li>
+          <li><a href="/" rel="dofollow">foreword</a></li>
+            <li><a href="#foundations" rel="dofollow">foundations</a></li>
+            <li><a href="#styles" rel="dofollow">styles</a></li>
+            <li><a href="#components" rel="dofollow">components</a></li>
+            <li><a href="https://github.com/dorkodu/prism">github</a></li>
           </ul>
         </div>
-      
+
         <div class="__column">
-          <h4>resources</h4>
+          <h4>company</h4>
           <ul>
-            <li><a href="/products">products</a></li>
-            <li><a href="https://github.com/dorkodu">open source</a></li>
-            <li><a href="/legal">legal</a></li>
+            <li><a href="/">frontpage</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/manifesto">manifesto</a></li>
+            <li><a href="https://dorkodu.com/work">join the folks!</a></li>
+            <li><a href="/investors">be an investor!</a></li>
           </ul>
         </div>
 

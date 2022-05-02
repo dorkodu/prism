@@ -17,22 +17,19 @@ import IntroPhoto from "../../../images/unsplash/jean-louis-paulin-Rr1CIeo9cPo-u
 
 //? pages are not meant to be reusable, so keep it as static as how you wish :)
 
-let actionLinks = [
-  <LinkButton type="primary" label="our philosophy" link="#philosophy" />,
-  <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
-];
-
 export function Foundations() {
   return (
     <div>
-      <Header />
       <IntroSection
         title="prism: foundations"
         tagline=""
         statement=""
         picture={<Picture source={IntroPhoto} title="" />}
-        links={actionLinks}
-        />
+        links={[
+          <LinkButton type="primary" label="our philosophy" link="#philosophy" />,
+          <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
+        ]}
+      />
       <main class="main">
         <article>
           <h3>our design philosophy</h3>
@@ -51,8 +48,6 @@ export function Foundations() {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consectetur fuga aperiam nisi quod amet quas reiciendis recusandae.</p>          
         </article>
       </main>
-
-      <Footer/>
     </div>
   );
 }
