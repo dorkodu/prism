@@ -47,6 +47,12 @@ module.exports = {
         }]
       },
       {
+        test: /\.(woff2?|ttf|otf|eot)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader',
+        options: { outputPath: "assets/fonts/" }
+      },
+      {
         test: /\.(scss|css)/,
         use: [
           "style-loader",

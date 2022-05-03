@@ -13,7 +13,8 @@
   "license": "MIT",
   "dependencies": {
     "@dorkodu/soda": "^1.0.6",
-    "@dorkodu/superpage.js": "^0.0.1"
+    "@dorkodu/superpage.js": "^0.0.1",
+    "resolve-url-loader": "^5.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
