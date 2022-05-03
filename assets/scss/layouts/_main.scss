@@ -1,4 +1,4 @@
-.main {
+main {
   h1, h2, h3, h4 {
     padding: 0 .5rem;
     margin: .75rem 0;
@@ -45,7 +45,7 @@
 
 
 @media (min-width: 1000px) {
-  .main > p {
+  main > p {
     padding: .5rem;
   }
 }
