@@ -1,4 +1,5 @@
 import { Soda } from "@dorkodu/soda";
+
 export function Card({badge, tag, title, message, content}) {
   //! NOTE: badge and tag should not be together
   return (
