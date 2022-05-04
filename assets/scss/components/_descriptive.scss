@@ -1,14 +1,37 @@
-/*----------  Descriptive List  ----------*/
-
-.descriptive-list {
-  padding: 1rem;
-  margin-top: 0;
-
-  .__badge {
+.descriptive-item {
+  >div {
+    width: calc(100% - 6rem);
+  }
+  
+  .badge {
     display: block !important;
     float: left;
     margin-right: 1rem;
   }
+
+  dt {
+    font-weight: 700;
+    font-size: 1.25rem !important;
+    padding-top: .25rem;
+    color: $color_Text;
+
+    .--bulletpoint {
+      color: $silver-l3;
+    }
+  }
+
+  dd {
+    color: $silver;
+    font-weight: 600;
+    padding-top: .25rem;
+    line-height: 140%;
+    font-size: 1.1rem;
+  }
+}
+
+.descriptive-list {
+  padding: 1rem;
+  margin-top: 0;
 
   .__title {
     text-align: left !important;
@@ -21,49 +44,26 @@
     font-size: 1.1rem !important;
   }
 
-  .__element {
-    margin-bottom: 2.5rem !important;
-    
-    >div {
-      width: calc(100% - 6rem);
-    }
-
-    dt {
-      font-weight: 700;
-      font-size: 1.25rem !important;
-      padding-top: .25rem;
-      color: $color_Text;
-
-      .--bulletpoint {
-        color: $silver-l3;
-      }
-    }
-
-    dd {
-      color: $silver;
-      font-weight: 600;
-      padding-top: .25rem;
-      line-height: 140%;
-      font-size: 1.1rem;
-    }
+  .descriptive-item {
+    margin-bottom: 2rem !important;
   }
-
-
 }
 
 @media (max-width: 500px) {
   .descriptive-list {
-    .badge {
-      display: inline-block !important;
-      font-size: 1.5rem;
-      float: none;
-      margin-right: 0;
-    }
-
-    .__element>div {
-      width: 100% !important;
-      float: none !important;
-      margin-top: .5rem !important;
+    .descriptive-item{
+      .badge {
+        display: inline-block !important;
+        font-size: 1.5rem;
+        float: none;
+        margin-right: 0;
+      }
+      
+      >div {
+        width: 100% !important;
+        float: none !important;
+        margin-top: .5rem !important;
+      }
     }
   }
 }

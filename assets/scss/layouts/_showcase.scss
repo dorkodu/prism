@@ -1,0 +1,11 @@
+.showcase {
+  .column {
+    &.--main {
+      width: 60%;
+    }
+
+    &.--aside {
+      width: 40%;
+    }
+  }
+}
