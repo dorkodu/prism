@@ -8,9 +8,11 @@ import { Components }  from "./pages/Components";
 import { Oops }        from "./pages/Oops";
 
 //* layouts
-import { Header } from "./layouts/Header";
-import { Footer } from "./layouts/Footer";
+import { Header }   from "./layouts/Header";
+import { Footer }   from "./layouts/Footer";
 
+// TODO: implement routing using superpage
+/*
 let pageweaver = {
   map: {},
   fallback: ()=>{},
@@ -56,21 +58,15 @@ let pages = [
     component: <Oops/>,
   }
 ];
-
-let websiteHandler;
-
-state = "homepage";
-websiteHandler();
+*/
 
 export function Website() {
-
-  let [__, update] = Soda.state(0);
-  websiteHandler = update;
-
   return (
     <div>
       <Header/>
-      <main class="main" id="contents"></main>
+      <main class="main" id="contents">
+        <Components/>
+      </main>
       <Footer/>
     </div>
   );

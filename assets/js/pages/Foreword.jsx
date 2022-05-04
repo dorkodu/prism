@@ -29,37 +29,13 @@ export function Foreword() {
       <article>
         <h1>hi, there 👋</h1>
         <h3>Lorem ipsum dolor sit amet consectetur?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corporis fuga reiciendis ut maxime expedita dignissimos necessitatibus quibusdam eaque! Dolorum deserunt excepturi numquam. Sequi, atque?</p>
-        
-        <h4>Blockquote</h4>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <Blockquote message="Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." owner="steve jobs"/>
-        
-        <div class="button-container">
-          <WhatNext title="steve jobs" action="read next" link="https://apple.com/remembering-steve"/>
-          <WhatNext title="apple computer, inc." action="read next" link="https://apple.com"/>
-        </div>
-      </article>
-      <IntroSection
-        title="simple components"
-        tagline=""
-        statement="each sample of our most basic components is here."
-        middle
-        />
-      <article>
-        <h3>common buttons</h3>
-        <p>
-          Buttons help people initiate actions, from sending an email, to sharing a document, to liking a post.
-          There are five types of common buttons: <b>standard</b>, <b>primary</b>, <b>secondary</b>, <b>outlined</b> and <b>text</b>.
+        <p> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Culpa corporis fuga reiciendis ut maxime expedita dignissimos necessitatibus quibusdam eaque! 
+          Dolorum deserunt excepturi numquam. 
+          Sequi, atque?
         </p>
-        <div class="button-container">
-          <LinkButton label="standard" link="#" />
-          <LinkButton type="primary" label="primary" link="#" />
-          <LinkButton type="secondary" label="secondary" link="#" />
-          <LinkButton type="outlined" label="outlined" link="#" />
-          <LinkButton type="text" label="text" link="#" />
-        </div>
       </article>
-    </div>
+    </div>  
   );
 }
