@@ -1,4 +1,4 @@
-![prism logo](./images/prism-M.png)
+![prism logo](./assets/images/prism-M.png)
 
 # prism
 
