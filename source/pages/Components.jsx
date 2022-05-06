@@ -2,7 +2,7 @@ import { Soda } from "@dorkodu/soda";
 
 //* layouts
 import { IntroSection }    from "../layouts/IntroSection";
-import { CardDeck }        from "../layouts/CardDeck";
+import { CardDeck }        from "../components/CardDeck";
 import { Banner }          from "../layouts/Banner";
 import { DescriptiveList } from "../layouts/DescriptiveList";
 

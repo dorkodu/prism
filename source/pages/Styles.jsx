@@ -1,9 +1,9 @@
 import { Soda } from "@dorkodu/soda";
 
 //* layouts
-import { Header } from "../layouts/Header";
-import { Footer } from "../layouts/Footer";
-import { IntroSection } from "../layouts/IntroSection";
+import { Header } from "../../assets/js/layouts/Header";
+import { Footer } from "../../assets/js/layouts/Footer";
+import { IntroSection } from "../../assets/js/layouts/IntroSection";
 
 //* components
 import { Image } from "../components/Image";
