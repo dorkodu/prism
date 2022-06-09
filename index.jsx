@@ -2,10 +2,10 @@
 import { Soda } from "@dorkodu/soda";
 
 //? add styles with SCSS
-import "./assets/scss/style.scss";
+import "./source/styles/style.scss";
 
 //? website
-import { Website } from "./assets/js/Website";
+import { Website } from "./source/Website";
 
 Soda.render(
   <Website/>,

@@ -1,10 +1,10 @@
 import { Soda } from "@dorkodu/soda";
 
 //* layouts
-import { IntroSection }    from "../layouts/IntroSection";
+import { IntroSection }    from "../components/IntroSection";
 import { CardDeck }        from "../components/CardDeck";
-import { Banner }          from "../layouts/Banner";
-import { DescriptiveList } from "../layouts/DescriptiveList";
+import { Banner }          from "../components/Banner";
+import { DescriptiveList } from "../components/DescriptiveList";
 
 //* components
 import { Image }           from "../components/Image";
@@ -16,15 +16,13 @@ import { Card }            from "../components/Card";
 import { DescriptiveItem } from "../components/DescriptiveItem";
 
 //* images
-import IntroPhoto       from "../../../images/unsplash/jean-louis-paulin-Rr1CIeo9cPo-unsplash.jpg";
-import IceCreamDoodle from "../../../images/opendoodles/IceCreamDoodle.svg";
-import LovingDoodle from "../../../images/opendoodles/LovingDoodle.svg";
+import IntroPhoto     from "../../../assets/images/unsplash/jean-louis-paulin-Rr1CIeo9cPo-unsplash.jpg";
+import IceCreamDoodle from "../../../assets/images/opendoodles/IceCreamDoodle.svg";
+import LovingDoodle   from "../../../assets/images/opendoodles/LovingDoodle.svg";
 
-//? pages are not meant to be reusable, so keep it as static as how you wish :)
-
-export function Components() {
+export const Components = () => {
   return (
-    <div>
+    <>
       <IntroSection
         title="prism components"
         tagline="common components"
@@ -35,6 +33,7 @@ export function Components() {
           <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
         ]}
       />
+      
       <main class="main">
         <article>
           <h3>buttons</h3>
@@ -133,6 +132,6 @@ export function Components() {
         </article>
 
       </main>
-    </div>
+    </>
   );
 }

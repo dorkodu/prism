@@ -8,8 +8,8 @@ import { Components }  from "./pages/Components";
 import { Oops }        from "./pages/Oops";
 
 //* layouts
-import { Header }   from "./layouts/Header";
-import { Footer }   from "./layouts/Footer";
+import { Header }   from "./components/Header";
+import { Footer }   from "./components/Footer";
 
 // TODO: implement routing using superpage
 /*
