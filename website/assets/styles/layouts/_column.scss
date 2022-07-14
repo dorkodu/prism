@@ -1,0 +1,27 @@
+/*----------  Bi-column  ----------*/
+
+.bi-column {
+  padding: 1rem;
+
+  >.column {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bi-column > .column {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .feature-showcase>.column.--main {
+    width: 60%;
+    float: left;
+  }
+
+  .feature-showcase>.column.--aside {
+    width: 40%;
+    float: left;
+  }
+}
