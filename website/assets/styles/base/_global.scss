@@ -6,7 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  
+
   * {
     box-sizing: inherit;
   }
@@ -231,7 +231,7 @@ article {
       margin: .5rem auto;
     }
   }
-  
+
 }
 
 span.--highlight {
@@ -245,6 +245,7 @@ span.--highlight {
 
 @media (min-width: 200px) {
   article.--wide {
+
     .picture,
     >p {
       width: 90%;

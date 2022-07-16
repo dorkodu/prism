@@ -136,11 +136,13 @@
       padding: 1rem;
       margin: 1rem;
       border-radius: 1rem;
-    }  
+    }
   }
 
   &.with-centered-items {
-    li, li * {
+
+    li,
+    li * {
       text-align: center !important;
     }
   }
@@ -169,7 +171,7 @@ ul.list {
     max-width: 24rem;
     margin: 1rem auto 1.5rem;
     text-align: center !important;
-    
+
     >dt {
       font-weight: 800;
       font-size: 1.25rem;
@@ -199,7 +201,7 @@ ul.list {
       margin: 0;
       padding: 0;
     }
-  } 
+  }
 }
 
 .latest-notes-list {
@@ -222,6 +224,7 @@ ul.list {
 }
 
 @media (min-width: 400px) {
+
   .list-grid li,
   .showcase-list li {
     width: 80%;
@@ -229,6 +232,7 @@ ul.list {
 }
 
 @media (min-width: 500px) {
+
   .list-grid li,
   .showcase-list li {
     max-width: 60%;
