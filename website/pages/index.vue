@@ -1,16 +1,16 @@
 <script setup>
-/*
+
 const intro = {
   title: "prism",
   tagline: "our artwork styleguide",
   statement: "we believe in this as a part of our mission, use technology to create wonderful, artistically subtle and liberating experiences for everyone.",
-  picture: <Picture source={IntroPhoto} title="some psychedelics make it work 😉" />,
+  picture: <Picture source="~" title="some psychedelics make it work 😉" />,
   links: [
     <LinkButton type="primary" label="our philosophy" link="#philosophy" />,
     <LinkButton type="secondary" label="join us!" link="https://dorkodu.com/work" />
   ]
 };
-*/
+
 </script>
 
 <template>
