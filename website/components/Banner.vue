@@ -1,0 +1,41 @@
+<template>
+  <div>
+
+  </div>
+</template>
+
+<script setup lang="ts">
+
+</script>
+
+<style lang="scss" scoped>
+.banner {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  text-align: center;
+
+  &.--gray {
+    background-color: $silver-d2;
+    color: #fff;
+  }
+
+  &.--green {
+    background-color: $primary;
+    color: #fff;
+  }
+
+  p {
+    text-align: center !important;
+    font-weight: 600;
+    color: inherit;
+    margin-bottom: 0;
+  }
+
+  a {
+    text-align: center !important;
+    font-weight: 600;
+    color: inherit !important;
+    text-decoration: underline;
+  }
+}
+</style>

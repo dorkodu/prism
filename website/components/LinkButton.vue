@@ -1,16 +1,20 @@
 <script lang="ts" setup>
-const { type, link, label } = defineProps(['type', 'link', 'label'])
+const { type, link, label }
+  = defineProps<{
+    type?: string;
+    link?: string;
+    label: string;
+  }>()
 
 let typeSuffix = type
   ? " --" + type
   : "";
 
 let className = "button" + typeSuffix;
-
 </script>
 
 <template>
-  <a :class="'button' + (type ? ' --' + type : "" )" :href="link">{{ label }}</a>
+  <a :class="className" :href="link">{{ label }}</a>
 </template>
 
 <style lang="scss" scoped>
