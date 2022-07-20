@@ -1,18 +1,16 @@
 import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+
+// prettier-ignore
 export default defineNuxtConfig({
   alias: {
-    '~~': '/<rootDir>',
-    '@@': '/<rootDir>',
-    '~': '/<rootDir>',
-    '@': '/<rootDir>',
-    assets: '/<rootDir>/assets',
-    public: '/<rootDir>/public',
-    images: '/<rootDir>/public/images',
-    style: '/<rootDir>/assets/style',
+    'images': 'public/images',
+    'scss': 'assets/scss',
   },
-  css: ['~/assets/style/style.scss'],
+  css: [
+    'scss/styles.scss',
+  ],
   // modules
   modules: ['@nuxtjs/color-mode'],
   colorMode: {

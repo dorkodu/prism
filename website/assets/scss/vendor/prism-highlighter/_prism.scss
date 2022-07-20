@@ -8,9 +8,10 @@
  * @author Lea Verou
  */
 
- code, pre {
-  font-family: mononoki, Consolas, Monaco, 'Andale Mono', Roboto Mono, 'Ubuntu Mono', monospace !important; 
- }
+code,
+pre {
+  font-family: mononoki, Consolas, Monaco, 'Andale Mono', Roboto Mono, 'Ubuntu Mono', monospace !important;
+}
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -195,7 +196,7 @@ pre[data-line] {
 		 * It's necessary because the element is layered on top of the displayed code.
 		 */
     -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
 
