@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: light) {
+  $system-color-primary: $reference-color-green-50;
+  $system-color-onPrimary: $reference-color-green-100;
+  $system-color-primaryContainer: $reference-color-green-90;
+  $system-color-onPrimaryContainer: $reference-color-green-10;
+
+  $system-color-secondary: $reference-color-gray-50;
+  $system-color-onSecondary: $reference-color-gray-100;
+  $system-color-secondaryContainer: $reference-color-gray-90;
+  $system-color-onSecondaryContainer: $reference-color-gray-10;
+
+  $system-color-error: $reference-color-red-50;
+  $system-color-onError: $reference-color-red-100;
+  $system-color-errorContainer: $reference-color-red-90;
+  $system-color-onErrorContainer: $reference-color-red-10;
+
+  $system-color-outline: $reference-color-gray-80;
+  $system-color-background: $reference-color-gray-99;
+  $system-color-onBackground: $reference-color-gray-10;
+  $system-color-surface: $reference-color-gray-99;
+  $system-color-onSurface: $reference-color-gray-80;
+
+  $system-color-text: $reference-color-gray-10;
+}
