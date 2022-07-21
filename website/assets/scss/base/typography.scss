@@ -1,13 +1,17 @@
 html {
-  font-family: "Rubik", sans-serif;
+  font-family: , sans-serif;
   font-weight: normal;
-  color: $color_Text;
+  color: $system-color-text;
   font-size: 1rem;
   text-transform: lowercase;
 }
 
-// Header Styles
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   margin: 0;
   margin-bottom: 1rem;
@@ -23,7 +27,18 @@ p {
 }
 
 // Text Styles
-em { font-style: italic; }
-strong { font-weight: bold; }
-.--uppercase { text-transform: uppercase; }
-.--lowercase { text-transform: lowercase; }
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.--uppercase {
+  text-transform: uppercase;
+}
+
+.--lowercase {
+  text-transform: lowercase;
+}

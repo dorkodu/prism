@@ -181,7 +181,7 @@ pre[data-line] {
   /* Same as .prism’s padding-top */
 
   background: hsla(24, 20%, 50%, .08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+  background: linear-gradient(to right, hsla(24, 20%, 50%, .1) $reference-color-baseSaturation, hsla(24, 20%, 50%, 0));
 
   pointer-events: none;
 

@@ -5,14 +5,10 @@
 // Abstract
 @import "abstract/__index";
 
-// Base Styles
-@import "base/__index";
-
-// Components
-@import "components/__index";
-
-// Layouts
-@import "layouts/__index";
+// Base
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
 
 // Vendor
 @import "vendor/__index";
