@@ -38,7 +38,7 @@ div {
 }
 
 p {
-  font-family: inherit, sans-serif;
+  font-family: inherit;
   font-size: 1rem;
   color: $system-color-text;
 }
@@ -64,7 +64,7 @@ code {
   font-family: mononoki, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Roboto Mono", "Courier New", ui-monospace, monospace !important;
   font-weight: 400;
   line-height: 1.25rem;
-  background-color: $neutral-l5;
+  background-color: $reference-color-gray-90;
   border-radius: .4rem;
   padding: .25rem;
 }
@@ -72,7 +72,7 @@ code {
 li code,
 p code {
   font-size: 1rem;
-  color: $neutral-d5;
+  color: $reference-color-gray-20;
 }
 
 h1,
@@ -84,7 +84,7 @@ h6 {
   color: $system-color-text;
   letter-spacing: -.03rem;
   text-rendering: optimizelegibility;
-  font-family: $fontFamily;
+  font-family: $system-typescale-headline-font;
 }
 
 @supports (font-stretch: 100%) {
@@ -121,7 +121,7 @@ h2.--underlined,
 h3.--underlined,
 h4.--underlined,
 h5.--underlined {
-  border-bottom: .32rem solid $neutral-l5 !important;
+  border-bottom: .32rem solid $reference-color-gray-90 !important;
   text-align: left !important;
   margin: 1rem !important;
 }
@@ -146,7 +146,7 @@ hr {
   overflow: hidden;
   background: transparent;
   border: 0;
-  border-bottom: .25rem solid $neutral-l6;
+  border-bottom: .25rem solid $reference-color-gray-95;
 }
 
 article {
@@ -172,7 +172,7 @@ article {
       }
 
       &::marker {
-        color: $neutral-l1 !important;
+        color: $reference-color-gray-60 !important;
       }
 
       h4 {
@@ -197,7 +197,7 @@ article {
 }
 
 span.--highlight {
-  background: top center / auto 1.5rem padding-box space no-repeat, $primary-l7 content-box;
+  background: top center / auto 1.5rem padding-box space no-repeat, $system-color-primary-50 content-box;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   color: $system-color-text;
@@ -258,11 +258,11 @@ main {
     text-align: left;
 
     a {
-      color: $blue-d1;
+      color: $system-color-secondary-40;
       font-weight: 600;
 
       &:hover {
-        color: $blue-d4;
+        color: $system-color-secondary-20;
         text-decoration: underline;
       }
     }

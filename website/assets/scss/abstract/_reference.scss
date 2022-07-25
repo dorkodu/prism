@@ -4,7 +4,15 @@ $reference-typescale-baseSize: 16px;
 $reference-typescale-baseLineHeight: 1;
 $reference-typescale-headingLineHeight: 1.25;
 
-//? COLORS
+//? VIEWPOINT
+$reference-viewpoint-mobile-S: 320px;
+$reference-viewpoint-mobile-M: 360px;
+$reference-viewpoint-mobile-L: 400px;
+$reference-viewpoint-tablet: 768px;
+$reference-viewpoint-desktop-S: 1024px;
+$reference-viewpoint-desktop-M: 1444px;
+$reference-viewpoint-desktop-L: 1920px;
+$reference-viewpoint-4K: 2560px;
 
 //* hue values
 $reference-color-hue-red: 350;

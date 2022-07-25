@@ -1,5 +1,5 @@
 html {
-  font-family: , sans-serif;
+  font-family: $system-typescale-body-font, sans-serif;
   font-weight: normal;
   color: $system-color-text;
   font-size: 1rem;
@@ -15,7 +15,7 @@ h6 {
   font-weight: bold;
   margin: 0;
   margin-bottom: 1rem;
-  line-height: $headingLineHeight;
+  line-height: 1.25;
 
   a {
     font-weight: inherit;
@@ -27,6 +27,7 @@ p {
 }
 
 // Text Styles
+
 em {
   font-style: italic;
 }
