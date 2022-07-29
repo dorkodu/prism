@@ -155,6 +155,7 @@
 
   .__wrapper {
     padding: 1.5rem 1rem;
+    max-width: $system-layout-breakpoint;
   }
 
   .__uppersection {
@@ -297,7 +298,6 @@
     .__wrapper {
       width: 80%;
       margin: 0 auto;
-      max-width: 75rem !important;
       padding-left: 0;
       padding-right: 0;
     }
