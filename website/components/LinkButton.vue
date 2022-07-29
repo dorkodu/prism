@@ -1,21 +1,54 @@
 <script lang="ts" setup>
-const { type, link, label }
-  = defineProps<{
-    type?: string;
-    link?: string;
-    label: string;
-  }>()
-
-let typeSuffix = type
-  ? " --" + type
-  : "";
-
-let className = "button" + typeSuffix;
+const { action, title, link } = defineProps<{
+  action: string;
+  title: string;
+  link: string;
+}>();
 </script>
 
 <template>
-  <a :class="className" :href="link">{{ label }}</a>
+  <a class="link-button" :href="link">
+    <span class="__action">{{ action }}</span>
+    <p class="__title">{{ title }}</p>
+  </a>
 </template>
 
 <style lang="scss" scoped>
+@import "scss/styles.scss";
+
+.link-button {
+  display: inline-block;
+  margin: .5rem 0;
+  margin-right: .5rem;
+  padding: .25rem 1.5rem .5rem 1rem;
+  border-radius: .7rem;
+  border: .2rem solid $reference-color-gray-95;
+  min-width: 12.5rem;
+  text-align: left;
+  color: $reference-color-gray-70  !important;
+
+  &:hover,
+  &:focus {
+    border-color: $reference-color-gray-90  !important;
+    text-decoration: underline;
+  }
+
+  .__title {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: .5rem 0;
+    padding: 0;
+    font-weight: 700;
+    color: $reference-color-gray-20  !important;
+  }
+
+  .__action {
+    display: block;
+    color: $reference-color-gray-60  !important;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: .25rem 0;
+  }
+}
 </style>
