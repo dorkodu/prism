@@ -1,5 +1,15 @@
 {
-  "private": true,
+  "name": "prism",
+  "version": "1.0.0",
+  "description": "the dorkodu's artwork styleguide & web components with a nuxt website template.",
+  "author": "doruk eray <doruk@dorkodu.com> (http://doruk.dorkodu.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dorkodu/prism.git",
+    "directory": "/website"
+  },
+  "license": "MIT",
+  "homepage": "https://prism.dorkodu.com",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,9 +18,10 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.1.4",
-    "node-sass": "^7.0.1",
-    "nuxt": "3.0.0-rc.4",
-    "sass": "^1.53.0",
+    "mdi": "^2.2.43",
+    "nuxt": "3.0.0-rc.6",
+    "sass": "^1.54.0",
     "sass-loader": "^13.0.2"
-  }
+  },
+  "dependencies": {}
 }
