@@ -18,6 +18,21 @@
   margin-bottom: 1rem !important;
 }
 
+
+.button-container {
+  padding: .5rem 0;
+  text-align: left;
+
+  &.--center {
+    text-align: center !important;
+  }
+
+  .button {
+    margin: .25rem 0 !important;
+    margin-right: .5rem !important;
+  }
+}
+
 /*----------  Feature Showcase  ----------*/
 
 .feature-showcase .column.--aside .picture {
