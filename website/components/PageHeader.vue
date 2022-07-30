@@ -3,13 +3,14 @@
     <header class="header">
       <div class="__container">
         <a class="__logo" href="/">
-          <img src="/images/prism.svg" title="prism logo" />
+          <img src="/images/dorkodu.svg" title="prism logo" />
         </a>
         <nav class="__nav">
-          <NuxtLink to="/" rel="dofollow">foreword</NuxtLink>
-          <NuxtLink to="/foundations" rel="dofollow">foundations</NuxtLink>
-          <NuxtLink to="/style" rel="dofollow">style</NuxtLink>
-          <NuxtLink to="/components" rel="dofollow">components</NuxtLink>
+          <NuxtLink to="/" rel="dofollow">home</NuxtLink>
+          <NuxtLink to="/about" rel="dofollow">about</NuxtLink>
+          <NuxtLink to="/manifesto" rel="dofollow">manifesto</NuxtLink>
+          <NuxtLink to="/jobs" rel="dofollow">work</NuxtLink>
+          <NuxtLink to="/investor" rel="dofollow">be an investor!</NuxtLink>
         </nav>
       </div>
     </header>
@@ -25,10 +26,10 @@
   .__container {
     display: flex;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: 1rem 1.5rem;
     max-width: $system-layout-breakpoint;
     flex-direction: column;
-    gap: .75rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
   }
@@ -71,17 +72,17 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $system-viewpoint-tablet) {
   .header {
     margin: 1rem auto;
 
     .__logo img {
-      width: 25rem;
+      width: 24rem;
     }
   }
 }
 
-@media (min-width: $reference-viewpoint-desktop-S) {
+@media (min-width: $system-viewpoint-desktop-S) {
   .header {
     .__container {
       flex-direction: row;
@@ -89,8 +90,8 @@
       gap: 3rem;
     }
 
-    .__logo img {
-      width: 28rem;
+    .__nav {
+      width: calc(100% - 24rem);
     }
   }
 }
