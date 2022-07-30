@@ -2,14 +2,19 @@
   <div>
     <div class="Testimonial">
       <div class="__container">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 975.036 975.036">
-          <path
-            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-          </path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M6 15h15" />
+          <path d="M21 19h-15" />
+          <path d="M15 11h6" />
+          <path d="M21 7h-6" />
+          <path d="M9 9h1a1 1 0 1 1 -1 1v-2.5a2 2 0 0 1 2 -2" />
+          <path d="M3 9h1a1 1 0 1 1 -1 1v-2.5a2 2 0 0 1 2 -2" />
         </svg>
         <p>{{ quote }}</p>
         <span class="__divider"></span>
-        <h2 class="__name">{{ name }}</h2>
+        <h4 class="__name">{{ name }}</h4>
         <p v-if="title" class="__title">{{ title }}</p>
       </div>
     </div>
@@ -32,9 +37,9 @@ const { name, title, quote }
   width: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  max-width: 45rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  max-width: 48rem;
 
   .__container {
     text-align: center;
@@ -43,38 +48,49 @@ const { name, title, quote }
 
   svg {
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: $reference-color-gray-80;
-    width: 2rem;
-    height: 2rem;
+    width: 3.6rem;
+    height: 3.6rem;
   }
 
   p {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    line-height: 1.625;
+    font-size: 1.25rem;
+    line-height: 1.80rem;
+    color: $reference-color-gray-20;
+    padding: 0;
+    margin: 0;
   }
 
   .__divider {
     display: inline-block;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-    color: $reference-color-gray-30;
-    width: 2.5rem;
-    height: 0.25rem;
-    border-radius: 0.25rem;
+    margin: 1.5rem 0 1rem;
+    background-color: $system-color-primary-50;
+    width: 4.8rem;
+    height: 0.4rem;
+    border-radius: 1rem;
   }
 
   .__name {
+    padding: 0;
+    margin: .25rem auto;
     color: $reference-color-gray-10;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 16rem;
   }
 
   .__title {
-    color: $reference-color-gray-60;
+    padding: 0;
+    margin: .25rem auto;
+    color: $reference-color-gray-70;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 24rem;
   }
 }
 </style>

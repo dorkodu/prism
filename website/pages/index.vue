@@ -15,6 +15,20 @@ const hero = {
     title: "some psychedelics make it work 😉"
   },
 };
+
+const postCard = {
+  token: "july",
+  value: "09",
+  tag: "post",
+  title: "lorem ipsum",
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae perspiciatis soluta a id quae ea ullam suscipit, sapiente temporibus molestias?",
+  person: {
+    name: "doruk eray",
+    avatar: "/images/doruk--green.png",
+    role: "ceo"
+  }
+};
+
 </script>
 
 <template>
@@ -62,8 +76,8 @@ const hero = {
         <Button type="text">follow us</Button>
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!</p>
-      <Testimonial name="doruk eray" title="founder and CEO @ dorkodu"
-        quote="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates molestiae dicta explicabo eos distinctio animi veniam quidem saepe quo pariatur? Ipsa id modi at odit laborum vero, natus voluptatem facere?" />
+      <Testimonial name="steve jobs" title="founder of apple computer"
+        quote="Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules, and they have no respect for the status quo. You can quote them; disagree with them; glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world are the ones who do." />
     </article>
     <CardDeck>
       <Card title="title" tag="php"
@@ -76,6 +90,11 @@ const hero = {
         message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
       <Card title="title" tag="php"
         message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+    </CardDeck>
+    <CardDeck>
+      <PostCard :data="postCard" />
+      <PostCard :data="postCard" />
+      <PostCard :data="postCard" />
     </CardDeck>
   </main>
 </template>
