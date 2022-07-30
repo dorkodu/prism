@@ -21,8 +21,8 @@ const { action, title, link } = defineProps<{
   margin: .5rem 0;
   margin-right: .5rem;
   padding: .25rem 1.5rem .5rem 1rem;
-  border-radius: .7rem;
-  border: .2rem solid $reference-color-gray-95;
+  border-radius: .75rem;
+  border: .25em solid $reference-color-gray-95;
   min-width: 12.5rem;
   text-align: left;
   color: $reference-color-gray-70  !important;
@@ -31,21 +31,25 @@ const { action, title, link } = defineProps<{
   &:focus {
     border-color: $reference-color-gray-90  !important;
     text-decoration: underline;
+
+    .__action {
+      color: $reference-color-gray-60  !important;
+    }
   }
 
   .__title {
     display: block;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    margin: .5rem 0;
+    margin: .25rem 0;
     padding: 0;
     font-weight: 700;
-    color: $reference-color-gray-20  !important;
+    color: $reference-color-gray-10  !important;
   }
 
   .__action {
     display: block;
-    color: $reference-color-gray-60  !important;
+    color: $reference-color-gray-70  !important;
     font-size: 1.25rem;
     font-weight: 700;
     margin: .25rem 0;
