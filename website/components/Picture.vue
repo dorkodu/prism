@@ -8,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+
 let { source, title } = defineProps<{
   source: string;
   title?: string;
@@ -17,28 +18,28 @@ if (!title) title = "";
 </script>
 
 <style lang="scss" scoped>
+@import "scss/styles.scss";
+
 .picture {
   display: block;
-  max-width: 90%;
   text-align: center !important;
-  margin: 1rem auto;
+  margin: 0 auto !important;
 
   img {
     border: 0;
     max-height: 20rem;
-    max-width: 100%;
     height: auto;
+    border-radius: .5rem;
   }
 
   p {
     font-size: 1.15rem !important;
     margin: 0.5rem;
     text-align: center !important;
-    color: $silver-l3;
+    color: $reference-color-gray-70;
     padding: 0 !important;
     font-weight: 500;
   }
-
 
   &.--doodle {
     max-width: 90%;
@@ -46,22 +47,15 @@ if (!title) title = "";
 
 }
 
-@media (min-width: 500px) {
+@media (min-width: $system-viewpoint-mobile-XL) {
   .picture {
     max-width: 95%;
-
-    img {
-      border: 0;
-      border-radius: .3rem;
-    }
   }
 }
 
-@media (min-width: 760px) {
+@media (min-width: $system-viewpoint-tablet) {
   .picture {
-    max-width: 80%;
-    padding: .5rem;
-    margin: 1rem auto !important;
+    max-width: 36rem;
   }
 }
 </style>

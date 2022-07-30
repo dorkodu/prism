@@ -19,6 +19,8 @@ const { title, description, badge } = defineProps<{
 </script>
 
 <style lang="scss" scoped>
+@import "scss/styles.scss";
+
 .descriptive-item {
   >div {
     width: calc(100% - 6rem);
@@ -34,10 +36,10 @@ const { title, description, badge } = defineProps<{
     font-weight: 700;
     font-size: 1.25rem !important;
     padding-top: .25rem;
-    color: $color_Text;
+    color: $system-color-text;
 
     .--bulletpoint {
-      color: $silver-l3;
+      color: $neutral-l3;
     }
   }
 

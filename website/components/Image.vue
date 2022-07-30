@@ -11,5 +11,6 @@ let { source, title } = defineProps<{
 }>();
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "scss/styles.scss";
 </style>

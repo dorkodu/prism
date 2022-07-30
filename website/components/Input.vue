@@ -1,4 +1,6 @@
 <style lang="scss">
+@import "scss/styles.scss";
+
 .input {
   float: left;
   font-size: 1.1rem;
@@ -8,16 +10,16 @@
   border-radius: 3rem;
   font-weight: 600;
   text-align: left;
-  color: $silver-d3;
-  background-color: $silver-l8;
+  color: $neutral-d3;
+  background-color: $neutral-l8;
 
   &:focus {
-    background-color: $silver-l7;
-    color: $silver-d3;
+    background-color: $neutral-l7;
+    color: $neutral-d3;
   }
 
   &::placeholder {
-    color: $silver-l2;
+    color: $neutral-l2;
   }
 }
 </style>

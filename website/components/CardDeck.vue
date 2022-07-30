@@ -16,6 +16,8 @@ let classSuffix = showcase
 </script>
 
 <style lang="scss">
+@import "scss/styles.scss";
+
 .card-deck {
   display: grid;
   padding: 1rem;
@@ -50,7 +52,7 @@ let classSuffix = showcase
 
       margin-top: .75rem;
       padding-top: .35rem;
-      border-top: .2rem solid $silver-l8;
+      border-top: .2rem solid $neutral-l8;
       text-align: right;
 
       >a {
@@ -60,11 +62,11 @@ let classSuffix = showcase
         >svg {
           width: 2rem;
           height: 2rem;
-          stroke: $silver-l3;
+          stroke: $neutral-l3;
         }
 
         &:hover>svg {
-          stroke: $silver-d1;
+          stroke: $neutral-d1;
         }
       }
     }

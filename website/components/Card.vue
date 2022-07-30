@@ -21,9 +21,11 @@ const { badge, tag, title, message, content }
 </template>
 
 <style lang="scss" scoped>
+@import "scss/styles.scss";
+
 .card {
   background-color: #fff;
-  border: .25rem solid $silver-l8;
+  border: .25rem solid $neutral-l8;
   padding: .75rem 1rem 1rem;
   border-radius: 1rem;
 
@@ -39,8 +41,8 @@ const { badge, tag, title, message, content }
       border-radius: .5rem;
       font-weight: 800;
       font-size: 1.25rem !important;
-      background-color: $silver-l7;
-      color: $silver-l1;
+      background-color: $neutral-l7;
+      color: $neutral-l1;
       clear: right;
       margin-bottom: .25rem;
     }

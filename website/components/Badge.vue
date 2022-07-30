@@ -9,6 +9,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import "scss/styles.scss";
+
 .badge {
   display: inline-block !important;
   padding: .6rem !important;

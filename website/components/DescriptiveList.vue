@@ -15,6 +15,8 @@ const { title, message, children } = defineProps<{
 </script>
 
 <style lang="scss" scoped>
+@import "scss/styles.scss";
+
 .descriptive-list {
   padding: 1rem;
   margin-top: 0;
