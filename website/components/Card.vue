@@ -25,7 +25,7 @@ const { badge, tag, title, message, content }
 
 .card {
   background-color: #fff;
-  border: .25rem solid $neutral-l8;
+  border: .25rem solid $reference-color-gray-95;
   padding: .75rem 1rem 1rem;
   border-radius: 1rem;
 
@@ -37,12 +37,12 @@ const { badge, tag, title, message, content }
 
     &.__tag {
       display: inline-block;
-      padding: .25rem .5rem !important;
+      padding: .25rem .5rem .35rem !important;
       border-radius: .5rem;
       font-weight: 800;
       font-size: 1.25rem !important;
-      background-color: $neutral-l7;
-      color: $neutral-l1;
+      background-color: $reference-color-gray-90;
+      color: $reference-color-gray-60;
       clear: right;
       margin-bottom: .25rem;
     }

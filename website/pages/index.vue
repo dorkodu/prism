@@ -61,7 +61,22 @@ const hero = {
         <Button type="outline">follow us</Button>
         <Button type="text">follow us</Button>
       </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!</p>
+      <Testimonial name="doruk eray" title="founder and CEO @ dorkodu"
+        quote="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates molestiae dicta explicabo eos distinctio animi veniam quidem saepe quo pariatur? Ipsa id modi at odit laborum vero, natus voluptatem facere?" />
     </article>
+    <CardDeck>
+      <Card title="title" tag="php"
+        message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+      <Card title="title" tag="php"
+        message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+      <Card title="title" tag="php"
+        message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+      <Card title="title" tag="php"
+        message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+      <Card title="title" tag="php"
+        message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+    </CardDeck>
   </main>
 </template>
 
