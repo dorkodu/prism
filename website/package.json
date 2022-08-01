@@ -21,6 +21,7 @@
     "mdi": "^2.2.43",
     "nuxt": "3.0.0-rc.6",
     "sass": "^1.54.0",
-    "sass-loader": "^13.0.2"
+    "sass-loader": "^13.0.2",
+    "vue-tabler-icons": "^2.8.0"
   }
 }

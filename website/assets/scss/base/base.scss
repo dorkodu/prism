@@ -205,22 +205,17 @@ span.--highlight {
   line-height: 125%;
 }
 
-@media (min-width: 200px) {
-  article.--wide {
+article.--wide {
 
-    .picture,
-    >p {
-      width: 90%;
-      margin: .5rem auto;
-    }
-  }
-
-  article {
-    padding: 1rem;
+  .picture,
+  >p {
+    width: 90%;
+    margin: .5rem auto;
   }
 }
 
-main {
+article {
+  padding: 1rem;
 
   h1,
   h2,
@@ -253,7 +248,7 @@ main {
 
   p {
     padding: 1rem .5rem;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 130%;
     text-align: left;
 
@@ -270,7 +265,7 @@ main {
 }
 
 @media (min-width: 1000px) {
-  main>p {
+  article>p {
     padding: .5rem;
   }
 }
