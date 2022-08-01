@@ -8,7 +8,9 @@
           <span class="__value">{{ data.value }}</span>
         </div>
         <div class="__main">
-          <h2 v-if="data.tag" class="__tag">{{ data.tag }}</h2>
+          <div>
+            <h2 v-if="data.tag" class="__tag">{{ data.tag }}</h2>
+          </div>
           <h1 v-if="data.title" class="__title">{{ data.title }}</h1>
           <p v-if="data.content" class="__content">{{ data.content }}</p>
           <a v-if="data.person" class="__person">
@@ -36,6 +38,7 @@ const { data }
       person: {
         name: string;
         avatar: string;
+        role?: string;
       };
     };
   }>();
@@ -88,16 +91,19 @@ const { data }
   }
 
   .__main {
+    display: flex;
+    flex-direction: column;
     padding-left: 1.5rem;
     flex-grow: 1;
+    gap: .5rem;
   }
 
   .__tag {
     display: inline-block;
-    margin: 0 0 .5rem;
+    margin: 0;
     padding: .25rem .5rem;
     border-radius: .4rem;
-    color: $reference-color-green-50;
+    color: $reference-color-green-40;
     background-color: $reference-color-green-90;
     font-size: 1.15rem;
     font-weight: 750;
@@ -108,7 +114,7 @@ const { data }
   .__title {
     margin: 0 !important;
     color: $reference-color-gray-10;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     font-weight: 700;
     text-align: left;
@@ -117,16 +123,17 @@ const { data }
 
   .__content {
     margin: 0 !important;
-    padding: .5rem 0 !important;
-    margin-bottom: 1.25rem;
+    padding: 0 !important;
     text-align: left;
+    font-size: 1.15rem;
   }
 
   .__person {
     display: inline-flex;
     align-items: center;
-    padding: 0 .2rem;
-    margin: .5rem 0;
+    padding: 0;
+    margin: 0;
+    margin-top: .25rem;
 
     .__avatar {
       object-fit: cover;

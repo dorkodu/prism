@@ -49,13 +49,14 @@ const { name, title, quote }
   svg {
     display: inline-block;
     margin-bottom: 1rem;
+    margin-right: 1rem;
     color: $reference-color-gray-80;
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.80rem;
     color: $reference-color-gray-20;
     padding: 0;
