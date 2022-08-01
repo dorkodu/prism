@@ -1,4 +1,15 @@
 <script setup>
+import {
+  BrandFinderIcon,
+  ToolsIcon,
+  CpuIcon,
+  BlurIcon,
+  Flag3Icon,
+  BriefcaseIcon,
+  BuildingBankIcon,
+  CodeIcon,
+  SchemaIcon
+} from "vue-tabler-icons";
 
 definePageMeta({
   title: "sage",
@@ -11,7 +22,7 @@ const hero = {
   tagline: "the marvelous data exchange protocol for APIs",
   statement: `Sage aims to simplify the communication for data interactions between different layers of software, and designed especially for APIs.`,
   picture: {
-    source: "/images/thewall.jpg",
+    source: "/images/SitReadingDoodle.svg",
     title: "some psychedelics make it work 😉"
   },
 };
@@ -24,7 +35,7 @@ const postCard = {
   content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae perspiciatis soluta a id quae ea ullam suscipit, sapiente temporibus molestias?",
   person: {
     name: "doruk eray",
-    avatar: "/images/doruk--green.png",
+    avatar: "/images/doruk.png",
     role: "ceo"
   }
 };
@@ -50,7 +61,7 @@ const postCard = {
         to query/response for data and a runtime capable of executing those queries with your existing business logic
         and data.
       </p>
-      <Picture :source="hero.picture.source" :title="hero.picture.title" />
+      <Picture :source="'/images/workdesk.jpg'" :title="'no time like the present.'" />
       <p>
         Sage provides a <b>simple</b> & <b>lightweight</b> but also <b>efficient, expressive, productive</b> and
         <b>intuitive</b>
@@ -79,9 +90,60 @@ const postCard = {
       <Testimonial name="steve jobs" title="founder of apple computer"
         quote="Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules, and they have no respect for the status quo. You can quote them; disagree with them; glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world are the ones who do." />
     </article>
+
+    <Showcase>
+      <template #main>
+        <DescriptiveList title="lorem ipsum sit."
+          message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde magni a ex deserunt!">
+          <DescriptiveItem title="lorem ipsum"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde voluptates magni a ex deserunt!">
+            <BrandFinderIcon class="badge" />
+          </DescriptiveItem>
+          <DescriptiveItem title="Lorem ipsum dolor sit."
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni labore molestias tempore cupiditate odio dolorem at error natus quibusdam.">
+            <BlurIcon class="badge" />
+          </DescriptiveItem>
+          <DescriptiveItem title="lorem ipsum"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, voluptas?">
+            <SchemaIcon class="badge" />
+          </DescriptiveItem>
+        </DescriptiveList>
+      </template>
+      <template #side>
+        <Picture :source="hero.picture.source" :title="hero.picture.title" />
+      </template>
+    </Showcase>
+
+    <article>
+      <TeamMember name="doruk eray" title="founder & chief"
+        about="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quas illum id officia. Pariatur sit ipsum optio nesciunt? Alias, dignissimos."
+        avatar="/images/doruk.png">
+        <template #symbol>
+          <Flag3Icon size="32" />
+          <ToolsIcon size="32" />
+          <BuildingBankIcon size="32" />
+        </template>
+        <template #more></template>
+      </TeamMember>
+
+      <TeamMember name="berk cambaz" title="technologist"
+        about="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, enim. Dolorem doloremque similique dolorum repellat minus sequi fugiat nihil?"
+        avatar="/images/berk.png">
+        <template #symbol>
+          <CpuIcon size="32" />
+          <CodeIcon size="32" />
+        </template>
+        <template #more></template>
+      </TeamMember>
+    </article>
+
     <CardDeck>
-      <Card title="title" tag="php"
-        message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
+      <Card title="title" message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!">
+        <template #badge>
+          <CodeIcon class="badge" size="32" />
+        </template>
+      </Card>
+
       <Card title="title" tag="php"
         message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
       <Card title="title" tag="php"
@@ -91,11 +153,15 @@ const postCard = {
       <Card title="title" tag="php"
         message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
     </CardDeck>
-    <CardDeck>
-      <PostCard :data="postCard" />
-      <PostCard :data="postCard" />
-      <PostCard :data="postCard" />
-    </CardDeck>
+
+    <Showcase>
+      <template #main>
+        <PostCard :data="postCard" />
+      </template>
+      <template #side>
+        <Picture source="/images/doruk.png" title="hello world!" />
+      </template>
+    </Showcase>
   </main>
 </template>
 
