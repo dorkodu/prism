@@ -1,12 +1,12 @@
 <template>
-  <div class="card-deck">
+  <div class="CardDeck">
     <slot></slot>
   </div>
 </template>
 <style lang="scss">
 @import "scss/styles.scss";
 
-.card-deck {
+.CardDeck {
   display: grid;
   padding: 1rem;
   row-gap: 1rem;
@@ -14,24 +14,24 @@
   grid-gap: 1rem 1rem;
   grid-auto-rows: minmax(6rem, auto);
   grid-template-columns: 1fr;
-  max-width: 70rem;
+  max-width: 76rem;
   margin: 1rem auto;
 
-  &>.card {
-    max-width: 22rem;
+  &>.Card {
+    max-width: 28rem;
     margin: 0 auto;
   }
 }
 
-@media (min-width: $system-viewpoint-desktop-S) {
-  .card-deck {
+@media (min-width: $system-viewpoint-tablet) {
+  .CardDeck {
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .card-deck {
+  .CardDeck {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
