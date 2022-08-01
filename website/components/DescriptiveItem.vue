@@ -1,7 +1,9 @@
 <template>
   <div class="descriptive-item">
-    <i v-if="badge" class="badge">{{ badge }}</i>
-    <div>
+    <span class="__badge">
+      <slot></slot>
+    </span>
+    <div class=".__contents">
       <dt>{{ title }}</dt>
       <dd>{{ description }}</dd>
     </div>
@@ -9,12 +11,9 @@
 </template>
 
 <script setup lang="ts">
-import { Component } from 'vue';
-
-const { title, description, badge } = defineProps<{
+const { title, description } = defineProps<{
   title: string;
   description: string;
-  badge: Component;
 }>();
 </script>
 
@@ -22,33 +21,31 @@ const { title, description, badge } = defineProps<{
 @import "scss/styles.scss";
 
 .descriptive-item {
-  >div {
-    width: calc(100% - 6rem);
-  }
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 
-  .badge {
-    display: block !important;
-    float: left;
-    margin-right: 1rem;
+  .__badge {
+    display: inline-block !important;
   }
 
   dt {
     font-weight: 700;
     font-size: 1.25rem !important;
-    padding-top: .25rem;
-    color: $system-color-text;
+    line-height: 1.5rem;
+    color: $reference-color-gray-10;
 
     .--bulletpoint {
-      color: $neutral-l3;
+      color: $reference-color-gray-70;
     }
   }
 
   dd {
-    color: $silver;
-    font-weight: 600;
+    color: $reference-color-gray-50;
+    font-weight: 450;
     padding-top: .25rem;
-    line-height: 140%;
-    font-size: 1.1rem;
+    line-height: 1.25;
+    font-size: 1.15rem;
   }
 }
 </style>

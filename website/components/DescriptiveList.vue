@@ -2,15 +2,16 @@
   <dl class="descriptive-list">
     <h2 v-if="title" class="__title">{{ title }}</h2>
     <p v-if="message" class="__message">{{ message }}</p>
-    {{ children }}
+    <div class="__contents">
+      <slot></slot>
+    </div>
   </dl>
 </template>
 
 <script setup lang="ts">
-const { title, message, children } = defineProps<{
+const { title, message } = defineProps<{
   title: string;
   message: string;
-  children: any;
 }>();
 </script>
 
@@ -18,41 +19,26 @@ const { title, message, children } = defineProps<{
 @import "scss/styles.scss";
 
 .descriptive-list {
-  padding: 1rem;
-  margin-top: 0;
+  padding: 0 1rem;
+  max-width: 32rem;
+  margin: 0 auto;
 
   .__title {
     text-align: left !important;
     padding: 0 !important;
+    margin: .5rem 0;
   }
 
   .__message {
     padding: 0 !important;
     margin: .5rem 0 2rem;
-    font-size: 1.1rem !important;
+    font-size: 1.15rem !important;
   }
 
-  .descriptive-item {
-    margin-bottom: 2rem !important;
-  }
-}
-
-@media (max-width: 500px) {
-  .descriptive-list {
-    .descriptive-item {
-      .badge {
-        display: inline-block !important;
-        font-size: 1.5rem;
-        float: none;
-        margin-right: 0;
-      }
-
-      >div {
-        width: 100% !important;
-        float: none !important;
-        margin-top: .5rem !important;
-      }
-    }
+  .__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 </style>
