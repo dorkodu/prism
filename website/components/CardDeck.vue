@@ -1,8 +1,16 @@
 <template>
-  <div class="CardDeck">
+  <div :class="'CardDeck ' + attrs">
     <slot></slot>
   </div>
 </template>
+<script setup lang="ts">
+const { columns }
+  = defineProps<{
+    columns?: number;
+  }>();
+
+const attrs = (columns) ? "--" + columns : "";
+</script>
 <style lang="scss">
 @import "scss/styles.scss";
 
@@ -33,6 +41,24 @@
 @media (min-width: 1200px) {
   .CardDeck {
     grid-template-columns: 1fr 1fr 1fr;
+
+    &.--2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .CardDeck {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    &.--2 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &.--3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 </style>

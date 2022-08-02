@@ -114,7 +114,7 @@ const postCard = {
       </template>
     </Showcase>
 
-    <article>
+    <CardDeck :columns="2">
       <TeamMember name="doruk eray" title="founder & chief"
         about="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quas illum id officia. Pariatur sit ipsum optio nesciunt? Alias, dignissimos."
         avatar="/images/doruk.png">
@@ -135,9 +135,9 @@ const postCard = {
         </template>
         <template #more></template>
       </TeamMember>
-    </article>
+    </CardDeck>
 
-    <CardDeck>
+    <CardDeck :columns="3">
       <Card title="title" message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!">
         <template #badge>
           <CodeIcon class="badge" size="32" />
