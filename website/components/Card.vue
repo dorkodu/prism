@@ -53,8 +53,6 @@ const { tag, title, message }
     margin-bottom: .25rem;
   }
 
-  .message {}
-
   .title {
     font-size: 1.5rem !important;
     line-height: 1.75rem !important;

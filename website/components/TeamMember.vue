@@ -61,7 +61,7 @@ const { name, title, about, avatar }
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    gap: .1rem;
+    gap: .2rem;
 
     p {
       padding: 0;
@@ -87,7 +87,7 @@ const { name, title, about, avatar }
   }
 
   .about {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     color: $reference-color-gray-30;
   }
 }
@@ -100,7 +100,7 @@ const { name, title, about, avatar }
       flex-direction: row;
       justify-content: flex-start;
       gap: 1rem;
-      max-width: 34rem;
+      max-width: 36rem;
     }
 
     .avatar {

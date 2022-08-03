@@ -35,10 +35,7 @@ const { name, title, quote }
 
 .Testimonial {
   width: 100%;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 2rem 1rem;
   max-width: 48rem;
 
   .__container {
@@ -57,7 +54,7 @@ const { name, title, quote }
 
   p {
     font-size: 1.15rem;
-    line-height: 1.80rem;
+    line-height: 1.6rem;
     color: $reference-color-gray-20;
     padding: 0;
     margin: 0;
@@ -76,8 +73,7 @@ const { name, title, quote }
     padding: 0;
     margin: .25rem auto;
     color: $reference-color-gray-10;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.35rem;
     font-weight: 700;
     text-align: center;
     max-width: 16rem;

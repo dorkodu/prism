@@ -1,5 +1,5 @@
 <template>
-  <div :class="'CardDeck ' + attrs">
+  <div :class="'CardDeck' + attrs">
     <slot></slot>
   </div>
 </template>
@@ -9,7 +9,7 @@ const { columns }
     columns?: number;
   }>();
 
-const attrs = (columns) ? "--" + columns : "";
+const attrs = (columns) ? " --" + columns : "";
 </script>
 <style lang="scss">
 @import "scss/styles.scss";
@@ -23,7 +23,7 @@ const attrs = (columns) ? "--" + columns : "";
   grid-auto-rows: minmax(6rem, auto);
   grid-template-columns: 1fr;
   max-width: 76rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 
   &>.Card {
     max-width: 28rem;

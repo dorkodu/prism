@@ -27,7 +27,7 @@ if (!title) title = "";
 
   img {
     border: 0;
-    max-height: 20rem;
+    max-height: 24rem;
     height: auto;
     border-radius: .5rem;
   }

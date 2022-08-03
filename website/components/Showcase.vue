@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <div class="Showcase">
-      <div class="__main">
-        <slot name="main"></slot>
-      </div>
-      <div class="__side">
-        <slot name="side"></slot>
-      </div>
+  <div class="Showcase">
+    <div class="__main">
+      <slot name="main"></slot>
+    </div>
+    <div class="__side">
+      <slot name="side"></slot>
     </div>
   </div>
 </template>
@@ -22,11 +20,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 
   max-width: $system-layout-breakpoint;
-  margin: 2rem auto;
-  padding: 0 2rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 @media (min-width: 900px) {
