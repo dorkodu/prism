@@ -82,7 +82,7 @@ h4,
 h5,
 h6 {
   color: $system-color-text;
-  letter-spacing: -.03rem;
+  letter-spacing: -.025rem;
   text-rendering: optimizelegibility;
   font-family: $system-typescale-headline-font;
 }
@@ -116,22 +116,6 @@ h5 {
   font-weight: 600;
 }
 
-h1.--underlined,
-h2.--underlined,
-h3.--underlined,
-h4.--underlined,
-h5.--underlined {
-  border-bottom: .32rem solid $reference-color-gray-90 !important;
-  text-align: left !important;
-  margin: 1rem !important;
-}
-
-h1.--motto {
-  text-align: center;
-  max-width: 70%;
-  margin: 3rem auto;
-}
-
 ul {
   list-style: none;
 }
@@ -150,8 +134,9 @@ hr {
 }
 
 article {
-  margin: 1rem auto;
-  max-width: 45rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem;
 
   ul {
     margin: 0.5rem 1.5rem;
@@ -183,45 +168,13 @@ article {
     }
   }
 
-  &.--wide {
-    width: 100%;
-    max-width: none;
-
-    .picture,
-    >p {
-      width: 60%;
-      margin: .5rem auto;
-    }
-  }
-
-}
-
-span.--highlight {
-  background: top center / auto 1.5rem padding-box space no-repeat, $system-color-primary-50 content-box;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: $system-color-text;
-  display: inline;
-  line-height: 125%;
-}
-
-article.--wide {
-
-  .picture,
-  >p {
-    width: 90%;
-    margin: .5rem auto;
-  }
-}
-
-article {
-  padding: 1rem;
 
   h1,
   h2,
   h3,
   h4 {
     padding: 0 .5rem;
+    padding-right: 1rem;
     margin: .75rem 0;
     text-align: center;
   }
@@ -246,10 +199,15 @@ article {
     font-size: 1.25rem;
   }
 
+  h6 {
+    font-size: 1.15rem;
+  }
+
   p {
     padding: 1rem .5rem;
+    padding-left: .75rem;
     font-size: 1.15rem;
-    line-height: 130%;
+    line-height: 125%;
     text-align: left;
 
     a {
@@ -262,10 +220,31 @@ article {
       }
     }
   }
+
+  &.--wide {
+    width: 100%;
+    max-width: none;
+
+    .picture,
+    >p {
+      width: 60%;
+      margin: .5rem auto;
+    }
+  }
 }
 
-@media (min-width: 1000px) {
+span.--highlight {
+  background: top center / auto 1.5rem padding-box space no-repeat, $system-color-primary-50 content-box;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: $system-color-text;
+  display: inline;
+  line-height: 125%;
+}
+
+@media (min-width: $system-viewpoint-desktop-S) {
   article>p {
     padding: .5rem;
+    padding-left: 1.5rem;
   }
 }

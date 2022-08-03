@@ -1,10 +1,12 @@
 <script setup>
 import {
   BrandFinderIcon,
+  BrandOpenSourceIcon,
   ToolsIcon,
   CpuIcon,
   BlurIcon,
   Flag3Icon,
+  PeaceIcon,
   BriefcaseIcon,
   BuildingBankIcon,
   CodeIcon,
@@ -44,16 +46,43 @@ const postCard = {
 
 <template>
   <main>
-    <Hero :title="hero.title" :tagline="hero.tagline" :statement="hero.statement">
+    <Showcase style="margin-top: 0;">
+      <template #main>
+        <Hero :title="hero.title" :tagline="hero.tagline" :statement="hero.statement" style="margin-top: 0 !important;">
+          <template #head>
+          </template>
+          <template #content>
+            <div class="button-container" style="padding: 0;">
+              <Button type="fill" link="/about">sign up</Button>
+              <Button type="tonal" link="/about">log in</Button>
+            </div>
+          </template>
+        </Hero>
+
+      </template>
       <template #side>
         <Picture :source="hero.picture.source" :title="hero.picture.title" />
       </template>
+    </Showcase>
+
+    <Break />
+
+    <Hero title="lorem ipsum" tagline="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+      statement="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo error distinctio, dolorum eveniet adipisci."
+      center>
+      <template #head>
+        <PeaceIcon class="badge" />
+      </template>
       <template #content>
-        <div class="button-container">
-          <Button type="tonal" link="/about">about us</Button>
+        <div class="button-container" style="padding: 0; text-align: center;">
+          <Button type="fill" link="/about">sign up</Button>
+          <Button type="tonal" link="/about">log in</Button>
         </div>
       </template>
     </Hero>
+
+    <Break />
+
     <article>
       <h2>What is Sage?</h2>
       <p>
@@ -91,6 +120,8 @@ const postCard = {
         quote="Here’s to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They’re not fond of rules, and they have no respect for the status quo. You can quote them; disagree with them; glorify or vilify them. About the only thing you can’t do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world are the ones who do." />
     </article>
 
+    <Break />
+
     <Showcase>
       <template #main>
         <DescriptiveList title="lorem ipsum sit."
@@ -114,7 +145,9 @@ const postCard = {
       </template>
     </Showcase>
 
-    <CardDeck :columns="2">
+    <Break />
+
+    <article>
       <TeamMember name="doruk eray" title="founder & chief"
         about="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quas illum id officia. Pariatur sit ipsum optio nesciunt? Alias, dignissimos."
         avatar="/images/doruk.png">
@@ -125,17 +158,20 @@ const postCard = {
         </template>
         <template #more></template>
       </TeamMember>
-
+      <hr>
       <TeamMember name="berk cambaz" title="technologist"
         about="Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, enim. Dolorem doloremque similique dolorum repellat minus sequi fugiat nihil?"
         avatar="/images/berk.png">
         <template #symbol>
+          <BrandOpenSourceIcon size="32" />
           <CpuIcon size="32" />
           <CodeIcon size="32" />
         </template>
         <template #more></template>
       </TeamMember>
-    </CardDeck>
+    </article>
+
+    <Break />
 
     <CardDeck :columns="3">
       <Card title="title" message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!">
@@ -154,6 +190,8 @@ const postCard = {
         message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dignissimos!" />
     </CardDeck>
 
+    <Break />
+
     <Showcase>
       <template #main>
         <PostCard :data="postCard" />
@@ -162,6 +200,8 @@ const postCard = {
         <Picture source="/images/doruk.png" title="hello world!" />
       </template>
     </Showcase>
+
+    <Break />
   </main>
 </template>
 
