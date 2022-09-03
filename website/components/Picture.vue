@@ -1,21 +1,16 @@
-<template>
-  <div>
-    <div class="picture">
-      <img :src="source" :alt="title" :title="title" />
-      <p v-if="title !== ``">{{ title }}</p>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-
 let { source, title } = defineProps<{
   source: string;
   title?: string;
 }>();
-
-if (!title) title = "";
 </script>
+
+<template>
+  <div class="picture">
+    <img :src="source" :alt="title" :title="title" />
+    <p v-if="title !== ``">{{ title }}</p>
+  </div>
+</template>
 
 <style lang="scss" scoped>
 @import "scss/styles.scss";
@@ -29,7 +24,7 @@ if (!title) title = "";
     border: 0;
     max-height: 24rem;
     height: auto;
-    border-radius: .5rem;
+    border-radius: $system-layout-curve;
   }
 
   p {
