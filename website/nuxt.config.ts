@@ -8,11 +8,24 @@ export default defineNuxtConfig({
     'images': 'public/images',
     'scss': 'assets/scss',
   },
-  target: 'static', // default is 'server'
   css: [
     'scss/styles.scss',
   ],
-  typescript: {
-    shim: false
-  }
+  // modules
+  modules: ['@nuxtjs/color-mode'],
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode',
+  },
+  vite: {
+    define: {
+      'process.env.DEBUG': false,
+    },
+  },
 })

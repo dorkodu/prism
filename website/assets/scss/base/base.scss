@@ -122,7 +122,6 @@ ul {
 
 main {
   margin: 0 auto;
-  min-height: 100vh !important;
 }
 
 hr {
@@ -212,12 +211,12 @@ article {
     text-align: left;
 
     a {
-      color: $system-color-secondary-50;
+      color: $system-color-secondary-40;
       font-weight: 600;
-      text-decoration: underline;
 
       &:hover {
-        color: $system-color-secondary-30;
+        color: $system-color-secondary-20;
+        text-decoration: underline;
       }
     }
   }
