@@ -9,6 +9,10 @@ import { theme } from "./theme";
 import { useState } from "react";
 import { IconMoonStars, IconSun } from "@tabler/icons";
 import { useHotkeys, useLocalStorage } from "@mantine/hooks";
+import Showcase from "./Showcase/showcase";
+import { HeaderMegaMenu } from "./Showcase/Header";
+import { HeroBullets } from "./Showcase/Hero";
+import { FooterLinks } from "./Showcase/Footer";
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -30,30 +34,90 @@ function App() {
       toggleColorScheme={toggleColorScheme}
     >
       <MantineProvider
-        theme={{ colorScheme }}
+        theme={{ ...theme, colorScheme }}
         withGlobalStyles
         withNormalizeCSS
       >
-        <div>
-          <h1>Prism</h1>
-          <h2>Dorkodu's UI Components for the WEB</h2>
-          <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-              ullam aperiam veniam beatae iure quia facere, odio ipsam tempora
-              ea.
-            </p>
-            <ActionIcon
-              variant="light"
-              color={dark ? "yellow" : "blue"}
-              onClick={() => toggleColorScheme()}
-              title="Toggle color scheme"
-              size={36}
-            >
-              {dark ? <IconSun size={24} /> : <IconMoonStars size={24} />}
-            </ActionIcon>
-          </div>
-        </div>
+        <HeaderMegaMenu>
+          <ActionIcon
+            variant="light"
+            color={dark ? "yellow" : "blue"}
+            onClick={() => toggleColorScheme()}
+            title="Toggle color scheme"
+            size={36}
+          >
+            {dark ? <IconSun size={24} /> : <IconMoonStars size={24} />}
+          </ActionIcon>
+        </HeaderMegaMenu>
+        <HeroBullets />
+        <Showcase />
+        <FooterLinks
+          data={[
+            {
+              title: "About",
+              links: [
+                {
+                  label: "Features",
+                  link: "#",
+                },
+                {
+                  label: "Pricing",
+                  link: "#",
+                },
+                {
+                  label: "Support",
+                  link: "#",
+                },
+                {
+                  label: "Forums",
+                  link: "#",
+                },
+              ],
+            },
+            {
+              title: "Project",
+              links: [
+                {
+                  label: "Contribute",
+                  link: "#",
+                },
+                {
+                  label: "Media assets",
+                  link: "#",
+                },
+                {
+                  label: "Changelog",
+                  link: "#",
+                },
+                {
+                  label: "Releases",
+                  link: "#",
+                },
+              ],
+            },
+            {
+              title: "Community",
+              links: [
+                {
+                  label: "Join Discord",
+                  link: "#",
+                },
+                {
+                  label: "Follow on Twitter",
+                  link: "#",
+                },
+                {
+                  label: "Email newsletter",
+                  link: "#",
+                },
+                {
+                  label: "GitHub discussions",
+                  link: "#",
+                },
+              ],
+            },
+          ]}
+        ></FooterLinks>
       </MantineProvider>
     </ColorSchemeProvider>
   );
