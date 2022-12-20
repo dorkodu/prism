@@ -1,5 +1,5 @@
-import { MantineTheme, MantineThemeBase } from '@mantine/core';
-import { ui, tokens, color }  from "./prism";
+import { MantineTheme, MantineThemeBase } from "@mantine/core";
+import { ui, tokens, color } from "./prism";
 
 export const theme = {
   // Defines color scheme for all components, defaults to "light"
@@ -28,7 +28,7 @@ export const theme = {
   cursorType: "pointer",
 
   // Default border-radius used for most elements
-  defaultRadius: "lg",
+  defaultRadius: "xl",
 
   // White and black colors, defaults to '#fff' and '#000'
   white: ui.color.neutral(100),
@@ -36,7 +36,7 @@ export const theme = {
 
   // Object of arrays with 10 colors
   colors: {
-    'dorkodu': [
+    dorkodu: [
       tokens.color.green(95),
       tokens.color.green(88),
       tokens.color.green(80),
@@ -57,16 +57,25 @@ export const theme = {
   defaultGradient: { deg: 60, from: "dorkodu", to: "lime" },
 
   // font-family and line-height used in most components
-  fontFamily: "Rubik, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, sans-serif",
-  lineHeight: 1.25,
-  headings: { fontFamily: 'Rubik, sans-serif' },
-
-  // Timing function used for animations, defaults to 'ease'
-  // transitionTimingFunction: string;
-
+  fontFamily: `Rubik, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, sans-serif`,
   // Monospace font-family, used in Code, Kbd and Prism components
-  fontFamilyMonospace: `ui-monospace, "Cascadia Mono", SFMono-Regular, "Segoe UI Mono", "Roboto Mono", Liberation Mono, Courier New, "Ubuntu Mono",  Menlo, Monaco, Consolas, monospace`,
-  
+  fontFamilyMonospace: `ui-monospace, "JetBrains Mono", "Cascadia Mono", SFMono-Regular, "Segoe UI Mono", "Roboto Mono", Liberation Mono, Courier New, "Ubuntu Mono",  Menlo, Monaco, Consolas, monospace`,
+  lineHeight: 1.25,
+  headings: {
+    // properties for all headings
+    fontWeight: 600,
+    fontFamily: "Rubik",
+
+    sizes: {
+      h1: { fontSize: 34, lineHeight: 1.3, fontWeight: 800 },
+      h2: { fontSize: 28, lineHeight: 1.35, fontWeight: 700 },
+      h3: { fontSize: 24, lineHeight: 1.4, fontWeight: 600 },
+      h4: { fontSize: 20, lineHeight: 1.45, fontWeight: 600 },
+      h5: { fontSize: 18, lineHeight: 1.5, fontWeight: 550 },
+      h6: { fontSize: 16, lineHeight: 1.5, fontWeight: 500 },
+    },
+  },
+
   fontSizes: {
     xs: 12,
     sm: 14,
@@ -76,63 +85,45 @@ export const theme = {
   },
 
   radius: {
-    xs: 12,
-    sm: 14,
-    md: 16,
-    lg: 18,
-    xl: 22.5,
+    xs: 2,
+    sm: 4,
+    md: 8,
+    lg: 16,
+    xl: 32,
   },
 
   spacing: {
-    xs: 12,
-    sm: 14,
+    xs: 10,
+    sm: 12,
     md: 16,
-    lg: 18,
-    xl: 22.5,
+    lg: 20,
+    xl: 24,
   },
 
-  // Sizes for corresponding properties
-
+  // Breakpoints used in some components to add responsive styles
   breakpoints: {
-    "xs": 320,
-    "sm": 400,
-    "md": 728,
-     "lg": 1024,
-      "xl": 1400
+    xs: 500,
+    sm: 768,
+    md: 900,
+    lg: 1200,
+    xl: 1400,
   },
+
+  // Timing function used for animations, defaults to 'ease'
+  // transitionTimingFunction: string;
 
   // Values used for box-shadow
   // shadows: Record<"xs" | "sm" | "md" | "lg" | "xl", string>;
-
-  // Breakpoints used in some components to add responsive styles
-  /* 
-  breakpoints: {
-    "xs": 320,
-    "sm": 400,
-    "md": 728,
-     "lg": 1024,
-      "xl": 1400
+  shadows: {
+    xs: "0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1)",
+    sm: "0 1px 3px rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 7px 7px -5px",
+    md: "0 1px 3px rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px",
+    lg: "0 1px 3px rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0px 28px 23px -7px, rgba(0, 0, 0, 0.04) 0px 12px 12px -7px",
+    xl: "0 1px 3px rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0px 36px 28px -7px, rgba(0, 0, 0, 0.04) 0px 17px 17px -7px",
   },
-  */
 
   // Styles added to buttons with `:active` pseudo-class
   // activeStyles: {},
-
-  // h1-h6 styles, used in Title and TypographyStylesProvider components
-  headings: {
-    // properties for all headings
-    fontWeight: 500,
-    fontFamily: 'Rubik',
-
-    // properties for individual headings, all of them are optional
-    sizes: {
-      h1: { fontWeight: 800, fontSize: 36, lineHeight: 1.5 },
-      h2: { fontWeight: 700, fontSize: 32, lineHeight: 1.4 },
-      h3: { fontWeight: 600, fontSize: 28, lineHeight: 1.35 },
-      h4: { fontWeight: 550, fontSize: 24, lineHeight: 1.35 },
-      h5: { fontWeight: 500, fontSize: 20, lineHeight: 1.25 },
-      h6: { fontWeight: 500, fontSize: 16, lineHeight: 1.25 },
-    },
 
   // theme functions, see in theme functions guide
   // fn: null,
@@ -147,16 +138,33 @@ export const theme = {
   dateFormat: "",
 
   // Default dates formatting locale used in every @mantine/dates component
-  datesLocale: "",
+  datesLocale: "en",
+
+  focusRingStyles: {
+    styles: (theme: MantineTheme) => ({
+      outlineOffset: 2,
+      outline: `2px solid ${
+        theme.colors[theme.primaryColor][theme.colorScheme === "dark" ? 7 : 5]
+      }`,
+    }),
+    resetStyles: () => ({ outline: "none" }),
+    inputStyles: (theme: MantineTheme) => ({
+      outline: "none",
+      borderColor:
+        theme.colors[theme.primaryColor][
+          typeof theme.primaryShade === "object"
+            ? theme.primaryShade[theme.colorScheme]
+            : theme.primaryShade
+        ],
+    }),
+  },
 
   // defaultProps, styles and classNames for components
   components: {},
 
   // Global styles
-  globalStyles: (theme: MantineTheme) => {
-    return {}
-  },
+  globalStyles: (theme: MantineTheme) => ({}),
 
   // Add your own custom properties on Mantine theme
-  other: {}
-}
+  other: {},
+};
