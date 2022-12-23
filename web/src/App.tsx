@@ -9,7 +9,7 @@ import { theme } from "./theme";
 import { useState } from "react";
 import { IconMoonStars, IconSun } from "@tabler/icons";
 import { useHotkeys, useLocalStorage } from "@mantine/hooks";
-import Showcase from "./Showcase/showcase";
+import Showcase from "./Showcase/Showcase";
 import { HeaderMegaMenu } from "./Showcase/Header";
 import { HeroBullets } from "./Showcase/Hero";
 import { FooterLinks } from "./Showcase/Footer";
