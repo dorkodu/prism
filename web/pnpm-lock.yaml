@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.20.5
+  '@dorkodu/prism': ^0.1.0
   '@emotion/react': ^11.10.5
   '@mantine/core': ^5.9.5
   '@mantine/hooks': ^5.9.5
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.20.5
+  '@dorkodu/prism': 0.1.0
   '@emotion/react': 11.10.5_xl5my4wapvq2ctl7qwehtbgorq
   '@mantine/core': 5.9.5_hzg3oku4uxnt5crkeceagoktyy
   '@mantine/hooks': 5.9.5_react@18.2.0
@@ -251,6 +253,10 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+
+  /@dorkodu/prism/0.1.0:
+    resolution: {integrity: sha512-ex7RP/aqBYsjzEuvM1G0NMMshnZl057yD62BQMarJ40ucCK0ouwdTxKo4UDVujV9Cc/Gx8AInvkFo/XjwA2CzQ==}
+    dev: false
 
   /@emotion/babel-plugin/11.10.5_@babel+core@7.20.5:
     resolution: {integrity: sha512-xE7/hyLHJac7D2Ve9dKroBBZqBT7WuPQmWcq7HSGb84sUuP4mlOWoB8dvVfD9yk5DHkU1m6RW7xSoDtnQHNQeA==}

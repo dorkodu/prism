@@ -1,3 +1,6 @@
+import { Button } from "@mantine/core";
+import { IconBrandTwitter } from "@tabler/icons";
+
 export default function Showcase() {
   return (
     <div>

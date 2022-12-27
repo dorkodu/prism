@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.20.5",
+    "@dorkodu/prism": "^0.1.0",
     "@emotion/react": "^11.10.5",
     "@mantine/core": "^5.9.5",
     "@mantine/hooks": "^5.9.5",
