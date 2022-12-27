@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    //"noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    //"noUnusedParameters": true,
+    
+    "jsx": "react",
+    "outDir": "./dist",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "declaration": true,
+  },
+  "include": ["./src/**/*"],
+}
