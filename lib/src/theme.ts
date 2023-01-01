@@ -1,5 +1,5 @@
 import { MantineTheme, MantineThemeOverride } from "@mantine/core";
-import components from "./components";
+import ComponentLibrary from "./components";
 import { ui, tokens } from "./prism";
 
 export const theme: MantineThemeOverride = {
@@ -100,23 +100,24 @@ export const theme: MantineThemeOverride = {
   focusRingStyles: {
     styles: (theme: MantineTheme) => ({
       outlineOffset: 2,
-      outline: `2px solid ${theme.colors[theme.primaryColor][theme.colorScheme === "dark" ? 7 : 5]
-        }`,
+      outline: `2px solid ${
+        theme.colors[theme.primaryColor][theme.colorScheme === "dark" ? 7 : 5]
+      }`,
     }),
     resetStyles: () => ({ outline: "none" }),
     inputStyles: (theme: MantineTheme) => ({
       outline: "none",
       borderColor:
         theme.colors[theme.primaryColor][
-        typeof theme.primaryShade === "object"
-          ? theme.primaryShade[theme.colorScheme]
-          : theme.primaryShade
+          typeof theme.primaryShade === "object"
+            ? theme.primaryShade[theme.colorScheme]
+            : theme.primaryShade
         ],
     }),
   },
 
   //? imported from components.ts module
-  components,
+  components: ComponentLibrary.components,
 
   globalStyles: (theme: MantineTheme) => ({}),
 

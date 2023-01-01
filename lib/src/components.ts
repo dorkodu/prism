@@ -1,32 +1,22 @@
-import type { ButtonStylesParams, MantineTheme } from "@mantine/core";
+import type { MantineTheme } from "@mantine/core";
 
-export default {
-  Button: {
-    defaultProps: {},
+const ComponentLibrary: Partial<MantineTheme> = {
+  components: {
+    Button: {},
 
-    styles: (theme: MantineTheme, params: ButtonStylesParams) => ({
-      root: {
-        height: 42,
-        padding: "0 30px",
-        backgroundColor:
-          params.variant === "filled"
-            ? theme.colors[params.color || theme.primaryColor][9]
-            : undefined,
+    TextInput: {},
+
+    Switch: {
+      defaultProps: {
+        onLabel: "ON",
+        offLabel: "OFF",
       },
-    }),
-  },
-
-  Switch: {
-    defaultProps: {
-      onLabel: "ON",
-      offLabel: "OFF",
     },
-  },
 
-  Badge: {
-    // Use raw styles object if you do not need theme dependency
-    styles: {
-      root: { borderWidth: 2 },
+    Badge: {
+      // Use raw styles object if you do not need theme dependency
     },
   },
 };
+
+export default ComponentLibrary;
