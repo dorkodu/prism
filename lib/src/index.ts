@@ -1,4 +1,5 @@
-import { theme } from "./theme"
-import { tokens } from "./prism"
+import { theme } from "./theme";
+import components from "./components";
+import { tokens } from "./prism";
 
-export { theme, tokens }
+export { theme, tokens, components };
