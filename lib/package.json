@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "rimraf ./lib && tsc",
-    "sync": "pnpm build && npm publish"
+    "publish": "pnpm build && npm publish"
   },
   "devDependencies": {
     "@mantine/core": "^5.9.6",
