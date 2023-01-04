@@ -1,22 +1,10 @@
-import type { MantineTheme } from "@mantine/core";
+import type { MantineThemeOverride } from "@mantine/core";
 
-const ComponentLibrary: Partial<MantineTheme> = {
+export const ComponentLibrary: MantineThemeOverride = {
   components: {
     Button: {},
-
     TextInput: {},
-
-    Switch: {
-      defaultProps: {
-        onLabel: "ON",
-        offLabel: "OFF",
-      },
-    },
-
-    Badge: {
-      // Use raw styles object if you do not need theme dependency
-    },
+    Switch: {},
+    Badge: {},
   },
 };
-
-export default ComponentLibrary;

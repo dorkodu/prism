@@ -1,5 +1,5 @@
 import { MantineTheme, MantineThemeOverride } from "@mantine/core";
-import ComponentLibrary from "./components";
+import { ComponentLibrary } from "./components";
 import { ui, tokens } from "./prism";
 
 export const theme: MantineThemeOverride = {
@@ -9,7 +9,7 @@ export const theme: MantineThemeOverride = {
 
   cursorType: "pointer",
 
-  defaultRadius: "lg",
+  defaultRadius: "md",
 
   dir: "ltr",
 
