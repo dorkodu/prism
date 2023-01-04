@@ -1,6 +1,6 @@
 {
   "name": "@dorkodu/prism",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "prism is dorkodu's artwork styleguide.",
   "author": "Dorkodu",
   "homepage": "https://github.com/dorkodu/prism#readme",
@@ -18,8 +18,7 @@
     "url": "https://github.com/dorkodu/prism/issues"
   },
   "scripts": {
-    "build": "rimraf ./lib && tsc",
-    "publish": "pnpm build && npm publish"
+    "build": "rimraf ./lib && tsc"
   },
   "devDependencies": {
     "@mantine/core": "^5.9.6",
